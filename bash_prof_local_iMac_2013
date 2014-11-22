@@ -1,0 +1,59 @@
+
+# This will move perl stuff to front...
+source ~/perl5/perlbrew/etc/bashrc
+
+# Haskell cabal
+export PATH=$HOME/.cabal/bin:$PATH
+
+# This will move /usr/local back to front to keep homebrew happy
+export PATH="${PATH/\/usr\/local\/bin:/}"
+export PATH=/usr/local/bin:$PATH
+
+# This is for DocBook / AsciiDoc
+export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
+
+function ggrep() {
+  grep -rI $1 * | grep -v svn | grep -v ROOT
+}
+
+function gwork () {
+  export GENIEWORKDIR=$HOME/Software/GENIE
+  echo "Setting working directory to $GENIEWORKDIR"
+  cd $GENIEWORKDIR
+  source environment_genie.sh
+}
+
+function gfname () {
+  find . -name "*$1*" | grep -v svn | grep -v ROOT
+}
+
+# OCLint
+# export OCLINT_HOME=$HOME/Dropbox/Programming/Programming/CPP/style/oclint-0.7-x86_64-apple-darwin-10
+# export PATH=$PATH:$OCLINT_HOME/bin
+
+# CPPLint
+export PATH=$PATH:${HOME}/Dropbox/Programming/Programming/CPP/style
+
+# vim 7.4
+export PATH=${HOME}/Software/vim_install/bin:$PATH
+
+# pip3 for Python3
+export PATH=$PATH:/Library/Frameworks/Python.framework/Versions/3.4/bin
+
+# Anaconda Python...
+# export PATH=$HOME/anaconda/bin:$PATH
+
+# Setting PATH for Python 2.7
+export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}
+
+# IPython alias shortcuts
+alias ipy="echo 'ipython --pylab' && ipython --pylab"
+alias ipq="echo 'ipython qtconsole --pylab=inline' && ipython qtconsole --pylab=inline"
+alias ipn="echo 'ipython notebook --pylab=inline' && ipython notebook --pylab=inline"
+
+# tbb
+alias settbb="source /usr/local/tbb/tbb42_20140122oss/tbbvars.sh libc++"
+
+# Other tools and scripts
+export PATH=$HOME/bin:$PATH
+

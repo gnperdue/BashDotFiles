@@ -1,0 +1,66 @@
+
+# move /usr/loca/bin up front for brew
+export PATH=/usr/local/bin:$PATH
+## Adding Racket to my PATH
+export PATH=/Applications/Racket\ v5.3.1/bin:$PATH
+# Haskell cabal
+export PATH=$HOME/.cabal/bin:$PATH
+
+# Boost
+# Uncomment if you need it...
+# export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/usr/local/boost_1_53_0/lib
+
+# Scala & Java
+# export CLASSPATH=
+export JAVA_HOME=$(/usr/libexec/java_home)
+# export SCALA_HOME=/usr/local/Cellar/scala/2.10.0/libexec/
+# export SCALA_HOME=/usr/local/Cellar/scala29/2.9.2/libexec/
+# export JAVACMD=drip
+# export DRIP_SHUTDOWN=30
+export SBT_OPTS="-XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -XX:PermSize=128M -XX:MaxPermSize=512M"
+alias scala29=/usr/local/Cellar/scala29/2.9.2/libexec/bin/scala
+# nailgun
+export NAILGUNLOC=/Users/gnperdue/Documents/Programming/Java/nailgun/nailgun-server/target
+
+# Coding Stuff
+alias rracket="racket -il readline"
+# alias emacs="/usr/local/Cellar/emacs/24.2/Emacs.app/Contents/MacOS/Emacs -nw"
+
+
+source ~/perl5/perlbrew/etc/bashrc
+# This will move /usr/local back to front to keep homebrew happy
+export PATH="${PATH/\/usr\/local\/bin:/}"
+export PATH=/usr/local/bin:$PATH
+
+# Wicked Cool...
+export PATH=$PATH:${HOME}/Dropbox/UnixSettings/WickedCoolScripts
+
+# For DocBook / AsciiDoc
+export XML_CATALOG_FILES=/usr/local/etc/xml/catalog
+
+
+# OCLint
+# export OCLINT_HOME=$HOME/Dropbox/Programming/Programming/CPP/style/oclint-0.7-x86_64-apple-darwin-10
+# export PATH=$PATH:$OCLINT_HOME/bin
+
+# CPPLint
+export PATH=$PATH:${HOME}/Dropbox/Programming/Programming/CPP/style
+
+# vim 7.4
+export PATH=${HOME}/Software/vim_install/bin:$PATH
+# export PATH=${HOME}/Software/vipy2/bin:$PATH
+
+# added by Anaconda 1.9.1 installer - moved by me here
+# export PATH=$HOME/anaconda/bin:$PATH
+
+# pip3 for Python3
+export PATH=$PATH:/Library/Frameworks/Python.framework/Versions/3.4/bin
+
+# Setting PATH for Python 2.7
+export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}
+alias ipy="echo 'ipython --pylab' && ipython --pylab"
+alias ipq="echo 'ipython qtconsole --pylab=inline' && ipython qtconsole --pylab=inline"
+alias ipn="echo 'ipython notebook --pylab=inline' && ipython notebook --pylab=inline"
+
+# Other tools and scripts
+export PATH=$HOME/bin:$PATH
