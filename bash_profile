@@ -79,12 +79,11 @@ export PS1="${BLUE}\W${RED}\$ ${NOCOLOR}"
 #
 # Title bar
 #
-
 # note that is different than the version used in the old prompt-based solution
-OPENTITLEBAR="\033]0;"
-CLOSETITLEBAR="\007"
-
-trap 'printf "${OPENTITLEBAR} `history 1 | cut -b8-` - `pwd` ${CLOSETITLEBAR}"' DEBUG
+# turned this off because it had issues with `%`
+# OPENTITLEBAR="\033]0;"
+# CLOSETITLEBAR="\007"
+# trap 'printf "${OPENTITLEBAR} `history 1 | cut -b8-` - `pwd` ${CLOSETITLEBAR}"' DEBUG
 
 # Use vim keystrokes to edit the command line (use <esc> to enter Normal Mode, <i> to return to Insert Mode).
 #set -o vi
