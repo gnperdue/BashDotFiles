@@ -2,9 +2,8 @@
 ulimit -c unlimited
 
 # turn on extended pattern matching
-shopt -s extglob
-
-shopt -s nullglob 
+# shopt -s extglob
+# shopt -s nullglob 
 
 export PATH=$PATH:~/Scripts:~/Dropbox/UnixSettings/LocalScripts
 

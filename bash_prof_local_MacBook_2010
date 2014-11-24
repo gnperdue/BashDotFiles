@@ -68,6 +68,11 @@ alias ipn="echo 'ipython notebook --pylab=inline' && ipython notebook --pylab=in
 export PATH=$HOME/bin:$PATH
 
 # bash completion
-if [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
-  . $(brew --prefix)/share/bash-completion/bash_completion
+# v2 disaster...
+# if [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
+#   . $(brew --prefix)/share/bash-completion/bash_completion
+# fi
+# v1 also sucks horribly...
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
 fi
