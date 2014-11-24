@@ -21,6 +21,8 @@ export SBT_OPTS="-XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -XX:PermS
 alias scala29=/usr/local/Cellar/scala29/2.9.2/libexec/bin/scala
 # nailgun
 export NAILGUNLOC=/Users/gnperdue/Documents/Programming/Java/nailgun/nailgun-server/target
+# Weka
+export WEKAPATH=$HOME/Software/weka-3-7-11
 
 # Coding Stuff
 alias rracket="racket -il readline"
