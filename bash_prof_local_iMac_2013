@@ -57,3 +57,9 @@ alias settbb="source /usr/local/tbb/tbb42_20140122oss/tbbvars.sh libc++"
 # Other tools and scripts
 export PATH=$HOME/bin:$PATH
 
+# bash completion
+# v1.3
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
