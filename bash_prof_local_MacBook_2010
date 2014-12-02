@@ -26,8 +26,6 @@ export WEKAPATH=$HOME/Software/weka-3-7-11
 
 # Coding Stuff
 alias rracket="racket -il readline"
-# alias emacs="/usr/local/Cellar/emacs/24.2/Emacs.app/Contents/MacOS/Emacs -nw"
-
 
 source ~/perl5/perlbrew/etc/bashrc
 # This will move /usr/local back to front to keep homebrew happy
@@ -55,14 +53,14 @@ export PATH=${HOME}/Software/vim_install/bin:$PATH
 # added by Anaconda 1.9.1 installer - moved by me here
 # export PATH=$HOME/anaconda/bin:$PATH
 
-# pip3 for Python3
-export PATH=$PATH:/Library/Frameworks/Python.framework/Versions/3.4/bin
-
 # Setting PATH for Python 2.7
 export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}
 alias ipy="echo 'ipython --pylab' && ipython --pylab"
 alias ipq="echo 'ipython qtconsole --pylab=inline' && ipython qtconsole --pylab=inline"
 alias ipn="echo 'ipython notebook --pylab=inline' && ipython notebook --pylab=inline"
+
+# Python3
+export PATH=$PATH:/Library/Frameworks/Python.framework/Versions/3.4/bin
 
 # Other tools and scripts
 export PATH=$HOME/bin:$PATH

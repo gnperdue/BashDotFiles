@@ -37,9 +37,6 @@ export PATH=$PATH:${HOME}/Dropbox/Programming/Programming/CPP/style
 # vim 7.4
 export PATH=${HOME}/Software/vim_install/bin:$PATH
 
-# pip3 for Python3
-export PATH=$PATH:/Library/Frameworks/Python.framework/Versions/3.4/bin
-
 # Anaconda Python...
 # export PATH=$HOME/anaconda/bin:$PATH
 
@@ -50,6 +47,9 @@ export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}
 alias ipy="echo 'ipython --pylab' && ipython --pylab"
 alias ipq="echo 'ipython qtconsole --pylab=inline' && ipython qtconsole --pylab=inline"
 alias ipn="echo 'ipython notebook --pylab=inline' && ipython notebook --pylab=inline"
+
+# Python3
+export PATH=$PATH:/Library/Frameworks/Python.framework/Versions/3.4/bin
 
 # tbb
 alias settbb="source /usr/local/tbb/tbb42_20140122oss/tbbvars.sh libc++"
