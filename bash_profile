@@ -1,6 +1,9 @@
 # keep core dumps
 ulimit -c unlimited
 
+# umask - set default file permissions
+# umask u=rwx,g=rwx,o=r
+
 # turn on extended pattern matching
 # shopt -s extglob
 # shopt -s nullglob 
