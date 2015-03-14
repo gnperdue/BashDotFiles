@@ -66,6 +66,9 @@ export PATH=${HOME}/Software/vim_install/bin:$PATH
 
 # Anaconda3 2.1.0 
 export PATH="/Users/gnperdue/anaconda/bin:$PATH"
+alias ipy="echo 'ipython --pylab' && ipython --pylab"
+alias ipq="echo 'ipython qtconsole --pylab=inline' && ipython qtconsole --pylab=inline"
+alias ipn="echo 'ipython notebook --pylab=inline' && ipython notebook --pylab=inline"
 
 
 # Other tools and scripts
