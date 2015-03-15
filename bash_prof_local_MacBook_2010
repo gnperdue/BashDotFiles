@@ -101,3 +101,17 @@ fi
 # }
 #
 # complete -o nospace -F _completeweka weka
+
+# currently having trouble with selenium in anaconda, so use my "by-hand"
+# Python3 install for django work...
+setupdjango() {
+  # take anaconda out of the PATH...
+  unalias -a ipy
+  unalias -a ipq
+  unalias -a ipn
+  export PATH="${PATH/\/Users\/gnperdue\/anaconda\/bin:/}"
+  # use my "by-hand" Python3...
+  export PATH=$PATH:/Library/Frameworks/Python.framework/Versions/3.4/bin
+  alias ipython=ipython3
+  alias python=python3
+}
