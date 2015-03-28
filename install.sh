@@ -28,8 +28,20 @@ if [ -e $HOME/.bash_prof_local ]; then
   mv -v $HOME/.bash_prof_local $HOME/.bash_prof_local_bck_$DAT
 fi
 
+if [ -L $HOME/.gitignore_global ]; then
+  echo "Found existing global git ignore as a link..."
+  echo " Removing symbolic link..."
+  rm -v $HOME/.gitignore_global
+fi
+if [ -e $HOME/.gitignore_global ]; then
+  echo "Found existing global git ignore as a file..."
+  echo " Making  bck..."
+  mv -v $HOME/.gitignore_global $HOME/.gitignore_global_bck_$DAT
+fi
+
 echo "Linking files..."
 ln -sv `pwd`/bash_profile $HOME/.bash_profile
+ln -sv `pwd`/gitignore_global $HOME/.gitignore_global
 echo " "
 echo "You need to get around to configuring a look up for the local!"
 echo " Options include: "
