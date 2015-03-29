@@ -106,9 +106,9 @@ fi
 # Python3 install for django work...
 setupdjango() {
   # take anaconda out of the PATH...
-  unalias -a ipy
-  unalias -a ipq
-  unalias -a ipn
+  unalias ipy
+  unalias ipq
+  unalias ipn
   export PATH="${PATH/\/Users\/gnperdue\/anaconda\/bin:/}"
   # use my "by-hand" Python3...
   export PATH=$PATH:/Library/Frameworks/Python.framework/Versions/3.4/bin
