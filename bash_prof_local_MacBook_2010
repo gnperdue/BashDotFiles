@@ -50,9 +50,6 @@ export PATH=$PATH:${HOME}/Dropbox/Programming/Programming/CPP/style
 export PATH=${HOME}/Software/vim_install/bin:$PATH
 # export PATH=${HOME}/Software/vipy2/bin:$PATH
 
-# added by Anaconda 1.9.1 installer - moved by me here
-# export PATH=$HOME/anaconda/bin:$PATH
-
 # Setting PATH for Python 2.7
 #  Still installed, but using Anaconda for now...
 # export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}

@@ -37,16 +37,18 @@ export PATH=$PATH:${HOME}/Dropbox/Programming/Programming/CPP/style
 # vim 7.4
 export PATH=${HOME}/Software/vim_install/bin:$PATH
 
-# Anaconda Python...
-# export PATH=$HOME/anaconda/bin:$PATH
-
+# -- Use Anaconda for now...
 # Python3
-export PATH=$PATH:/Library/Frameworks/Python.framework/Versions/3.4/bin
-
+# export PATH=$PATH:/Library/Frameworks/Python.framework/Versions/3.4/bin
 # Setting PATH for Python 2.7
-export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}
-
+# export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}
 # IPython alias shortcuts
+# alias ipy="echo 'ipython --pylab' && ipython --pylab"
+# alias ipq="echo 'ipython qtconsole --pylab=inline' && ipython qtconsole --pylab=inline"
+# alias ipn="echo 'ipython notebook --pylab=inline' && ipython notebook --pylab=inline"
+
+# Anaconda3 2.2.0 
+export PATH="/Users/perdue/anaconda/bin:$PATH"
 alias ipy="echo 'ipython --pylab' && ipython --pylab"
 alias ipq="echo 'ipython qtconsole --pylab=inline' && ipython qtconsole --pylab=inline"
 alias ipn="echo 'ipython notebook --pylab=inline' && ipython notebook --pylab=inline"
