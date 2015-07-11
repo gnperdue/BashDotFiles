@@ -61,11 +61,14 @@ export PATH=${HOME}/Software/vim_install/bin:$PATH
 #  Still installed, but using Anaconda for now...
 # export PATH=$PATH:/Library/Frameworks/Python.framework/Versions/3.4/bin
 
-# Anaconda3 2.1.0 
+# Anaconda3 
 export PATH="/Users/gnperdue/anaconda/bin:$PATH"
+# NOTE: ipython notebook --pylab=inline
+# [E 09:28:19.130 NotebookApp] Support for specifying --pylab on the command line has been removed.
+# [E 09:28:19.130 NotebookApp] Please use `%pylab inline` or `%matplotlib inline` in the notebook itself.
 alias ipy="echo 'ipython --pylab' && ipython --pylab"
 alias ipq="echo 'ipython qtconsole --pylab=inline' && ipython qtconsole --pylab=inline"
-alias ipn="echo 'ipython notebook --pylab=inline' && ipython notebook --pylab=inline"
+alias ipn="echo 'ipython notebook: use %pylab inline or %matplotlib inline' && ipython notebook"
 
 
 # Other tools and scripts
@@ -111,4 +114,13 @@ setupdjango() {
   export PATH=$PATH:/Library/Frameworks/Python.framework/Versions/3.4/bin
   alias ipython=ipython3
   alias python=python3
+}
+
+setupbrewinstalls() {
+  # take anaconda out of the PATH...
+  unalias ipy
+  unalias ipq
+  unalias ipn
+  export PATH="${PATH/\/Users\/gnperdue\/anaconda\/bin:/}"
+  # don't set up a Python 3
 }
