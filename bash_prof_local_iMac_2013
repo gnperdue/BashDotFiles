@@ -47,11 +47,14 @@ export PATH=${HOME}/Software/vim_install/bin:$PATH
 # alias ipq="echo 'ipython qtconsole --pylab=inline' && ipython qtconsole --pylab=inline"
 # alias ipn="echo 'ipython notebook --pylab=inline' && ipython notebook --pylab=inline"
 
-# Anaconda3 2.2.0 
+# Anaconda3 
 export PATH="/Users/perdue/anaconda/bin:$PATH"
+# NOTE: ipython notebook --pylab=inline
+# [E 09:28:19.130 NotebookApp] Support for specifying --pylab on the command line has been removed.
+# [E 09:28:19.130 NotebookApp] Please use `%pylab inline` or `%matplotlib inline` in the notebook itself.
 alias ipy="echo 'ipython --pylab' && ipython --pylab"
 alias ipq="echo 'ipython qtconsole --pylab=inline' && ipython qtconsole --pylab=inline"
-alias ipn="echo 'ipython notebook --pylab=inline' && ipython notebook --pylab=inline"
+alias ipn="echo 'ipython notebook: use %pylab inline or %matplotlib inline' && ipython notebook"
 
 # tbb
 alias settbb="source /usr/local/tbb/tbb42_20140122oss/tbbvars.sh libc++"
