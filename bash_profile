@@ -264,6 +264,7 @@ alias gpvm02="ssh perdue@minervagpvm02.fnal.gov"
 alias gpvm03="ssh perdue@minervagpvm03.fnal.gov"
 alias gpvm04="ssh perdue@minervagpvm04.fnal.gov"
 alias gpvm05="ssh perdue@minervagpvm05.fnal.gov"
+alias lbne1="ssh perdue@lbnegpvm01.fnal.gov"
 
 # GENIE stuff
 alias hepforge="ssh gnperdue@login.hepforge.org"
