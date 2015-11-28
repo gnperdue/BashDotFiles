@@ -39,6 +39,9 @@ if [ -e $HOME/.gitignore_global ]; then
   mv -v $HOME/.gitignore_global $HOME/.gitignore_global_bck_$DAT
 fi
 
+mkdir -p $HOME/.lein
+cp lein/profiles.clj $HOME/.lein/profiles.clj
+
 echo "Linking files..."
 ln -sv `pwd`/bash_profile $HOME/.bash_profile
 ln -sv `pwd`/gitignore_global $HOME/.gitignore_global
