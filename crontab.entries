@@ -1,0 +1,15 @@
+
+SHELL=/bin/bash
+#MAILTO="@.com"
+
+28 7 * * * find /cores -type f -mmin +10080 | xargs rm -f -v
+28 15 * * * find /cores -type f -mmin +10080 | xargs rm -f -v
+
+#remove vim backup after 2 weeks
+40 10 * * * find ~/.vim_backup/* -type d -mtime +14 -exec rm -rf {} \; >> /dev/null 2>&1
+
+#remove vim backup after 2 weeks
+40 10 * * * find ~/.emacs.d/backups/* -type f -mtime +14 -exec rm -rf {} \; >> /dev/null 2>&1
+
+# the `/`'s are _super important_ -> best to test carefully!
+#28 7 * * * rsync -av /Users/gnperdue/Dropbox/Cooking/ /Users/gnperdue/Documents/Recipes
