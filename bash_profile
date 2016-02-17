@@ -228,6 +228,9 @@ alias captmnvgpvm01="ssh perdue@captmnvgpvm01.fnal.gov"
 alias hepforge="ssh gnperdue@login.hepforge.org"
 alias genie01="ssh perdue@geniegpvm01.fnal.gov"
 
+# Liaison stuff
+alias cdcvs="ssh -l minervacvs cdcvs.fnal.gov"
+
 # Local stuff
 source $HOME/.bash_prof_local
 
