@@ -1,1 +1,4 @@
 ##
+# With machine name...
+export PS1="${GREEN}\h:${BLUE}\W${RED}\$ ${NOCOLOR}"
+
