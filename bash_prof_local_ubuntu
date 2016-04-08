@@ -3,3 +3,6 @@
 #export PS1="${GREEN}\h:${BLUE}\W${RED}\$ ${NOCOLOR}"
 alias ls="ls --color=auto -Fh"
 
+export PYTHONPATH=/home/perdue/software/caffe/python:$PYTHONPATH
+export CAFFE_ROOT=/home/perdue/software/caffe
+
