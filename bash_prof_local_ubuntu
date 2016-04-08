@@ -1,0 +1,5 @@
+##
+# With machine name...
+#export PS1="${GREEN}\h:${BLUE}\W${RED}\$ ${NOCOLOR}"
+alias ls="ls --color=auto -Fh"
+
