@@ -11,3 +11,4 @@ On Linux, you will need to do something like:
     sudo make --directory=/usr/share/doc/git/contrib/credential/gnome-keyring
     git config --global credential.helper /usr/share/doc/git/contrib/credential/gnome-keyring/git-credential-gnome-keyring
 
+For ssh access, instead of authentication tokens, use rsa keygen.
