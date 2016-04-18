@@ -8,8 +8,6 @@ ulimit -c unlimited
 # shopt -s extglob
 # shopt -s nullglob 
 
-export PATH=$PATH:~/Scripts:~/Dropbox/UnixSettings/LocalScripts
-
 # move /usr/loca/bin up front for brew
 #export PATH=/usr/local/bin:$PATH
 #export PATH=$PATH:~/Scripts
@@ -33,10 +31,6 @@ export PATH=$PATH:~/Scripts:~/Dropbox/UnixSettings/LocalScripts
 #alias scala29=/usr/local/Cellar/scala29/2.9.2/libexec/bin/scala
 # nailgun
 #export NAILGUNLOC=/Users/gnperdue/Documents/Programming/Java/nailgun/nailgun-server/target
-
-
-# Tiger fix for "man"
-export MANPATH=/usr/share/man:$MANPATH
 
 # enable xterm to support colors
 export TERM=xterm-color
@@ -131,11 +125,6 @@ fi
 #  Script sets ROOTSYS, updates PATH, LD_LIBRARY_PATH, and DYLD_LIBRARY_PATH...
 #source /Users/gnperdue/Software/root/bin/thisroot.sh 
 # alias root="source ${HOME}/Software/root/bin/thisroot.sh; root -l"
-
-#Needed for Tiger
-alias ssh="ssh -Y"
-#alias ssh="ssh -Y -x"
-
 
 # Generic 
 alias kinit="kinit -A"

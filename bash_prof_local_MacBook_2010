@@ -1,3 +1,10 @@
+export PATH=$PATH:~/Scripts:~/Dropbox/UnixSettings/LocalScripts
+
+# Tiger fix for "man"
+export MANPATH=/usr/share/man:$MANPATH
+#Needed for Tiger
+alias ssh="ssh -Y"
+#alias ssh="ssh -Y -x"
 
 # move /usr/loca/bin up front for brew
 export PATH=/usr/local/bin:$PATH

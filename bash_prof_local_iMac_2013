@@ -1,3 +1,10 @@
+export PATH=$PATH:~/Scripts:~/Dropbox/UnixSettings/LocalScripts
+
+# Tiger fix for "man"
+export MANPATH=/usr/share/man:$MANPATH
+#Needed for Tiger
+alias ssh="ssh -Y"
+#alias ssh="ssh -Y -x"
 
 # This will move perl stuff to front...
 source ~/perl5/perlbrew/etc/bashrc
