@@ -76,7 +76,7 @@ export PATH=${HOME}/Software/vim_install/bin:$PATH
 export PATH="/Users/gnperdue/anaconda/bin:$PATH"
 alias ipy="echo 'ipython --pylab' && ipython --pylab"
 alias ipq="echo 'ipython qtconsole --pylab=inline' && ipython qtconsole --pylab=inline"
-alias ipn="echo 'ipython notebook: use %pylab inline or %matplotlib inline' && ipython notebook"
+alias ipn="echo 'jupyter notebook: use %pylab inline or %matplotlib inline' && jupyter notebook"
 
 
 # Other tools and scripts
