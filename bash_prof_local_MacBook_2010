@@ -19,7 +19,9 @@ export PATH=$HOME/.cabal/bin:$PATH
 
 # Scala & Java
 # export CLASSPATH=
-export JAVA_HOME=$(/usr/libexec/java_home)
+# tarred up /System/Library/Frameworks/JavaVM.framework...
+# export JAVA_HOME=$(/usr/libexec/java_home)
+export PATH=$PATH:/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/bin
 # export SCALA_HOME=/usr/local/Cellar/scala/2.10.0/libexec/
 # export SCALA_HOME=/usr/local/Cellar/scala29/2.9.2/libexec/
 # export JAVACMD=drip
