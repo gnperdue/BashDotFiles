@@ -19,9 +19,13 @@ export PATH=$HOME/.cabal/bin:$PATH
 
 # Scala & Java
 # export CLASSPATH=
-# tarred up /System/Library/Frameworks/JavaVM.framework...
-# export JAVA_HOME=$(/usr/libexec/java_home)
-export PATH=$PATH:/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/bin
+# tarred up /System/Library/Frameworks/JavaVM.framework... this didn't work
+export JAVA_HOME=$(/usr/libexec/java_home)
+#
+# alt java setup - doesn't work, no `java_home` exe available?
+# export PATH=$PATH:/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/bin
+# export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home
+#
 # export SCALA_HOME=/usr/local/Cellar/scala/2.10.0/libexec/
 # export SCALA_HOME=/usr/local/Cellar/scala29/2.9.2/libexec/
 # export JAVACMD=drip
