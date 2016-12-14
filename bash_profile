@@ -210,6 +210,8 @@ alias gpvm02="ssh perdue@minervagpvm02.fnal.gov"
 alias gpvm03="ssh perdue@minervagpvm03.fnal.gov"
 alias gpvm04="ssh perdue@minervagpvm04.fnal.gov"
 alias gpvm05="ssh perdue@minervagpvm05.fnal.gov"
+alias gpvm06="ssh perdue@minervagpvm06.fnal.gov"
+alias gpvm07="ssh perdue@minervagpvm07.fnal.gov"
 alias lbne1="ssh perdue@lbnegpvm01.fnal.gov"
 alias captmnvgpvm01="ssh perdue@captmnvgpvm01.fnal.gov"
 
