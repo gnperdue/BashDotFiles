@@ -229,3 +229,6 @@ source $HOME/.bash_prof_local
 alias titan="ssh gnperdue@titan.ccs.ornl.gov"
 alias rhea="ssh gnperdue@rhea.ccs.ornl.gov"
 alias ccshome="ssh gnperdue@home.ccs.ornl.gov"
+
+# NERSC
+alias cori="ssh gnperdue@cori.nersc.gov"
