@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 # Note, on Cori, we want to use the default profile as it has lots of
-# system-specific stuff on it.
+# system-specific stuff on it. Note, we must edit the NERSC .bash_profile
+# file by hand to include the local file - we want to edit bash_profile.ext.
 
 # Check to see if the bash profiles already exist. If they do, archvie them
 # into _bck files unless they are just symbolic links, in which case just
@@ -33,5 +34,5 @@ fi
 
 echo "Linking files..."
 ln -sv `pwd`/gitignore_global $HOME/.gitignore_global
-ln -sv `pwd`/bash_prof_local_cori \$HOME/.bash_prof_local
+ln -sv `pwd`/bash_prof_local_cori $HOME/.bash_prof_local
 echo "Done."
