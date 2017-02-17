@@ -30,10 +30,12 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 # export SCALA_HOME=/usr/local/Cellar/scala29/2.9.2/libexec/
 # export JAVACMD=drip
 # export DRIP_SHUTDOWN=30
-export SBT_OPTS="-XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -XX:PermSize=128M -XX:MaxPermSize=512M"
-alias scala29=/usr/local/Cellar/scala29/2.9.2/libexec/bin/scala
+
+# java8 dropped support for PermSize and MaxPermSize
+# export SBT_OPTS="-XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -XX:PermSize=128M -XX:MaxPermSize=512M"
+export SBT_OPTS="-XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled"
 # nailgun
-export NAILGUNLOC=/Users/gnperdue/Documents/Programming/Java/nailgun/nailgun-server/target
+export NAILGUNLOC=/Users/gnperdue/Dropbox/Programming/Programming/Java/nailgun/nailgun-server/target
 # Weka
 export WEKAPATH=$HOME/Software/weka-3-7-11
 
@@ -83,7 +85,6 @@ export PATH="/Users/gnperdue/anaconda/bin:$PATH"
 alias ipy="echo 'ipython --pylab' && ipython --pylab"
 alias ipq="echo 'ipython qtconsole --pylab=inline' && ipython qtconsole --pylab=inline"
 alias ipn="echo 'jupyter notebook: use %pylab inline or %matplotlib inline' && jupyter notebook"
-
 
 # Other tools and scripts
 export PATH=$HOME/bin:$PATH
