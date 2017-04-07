@@ -14,12 +14,14 @@ def test_module_version(module_name):
     except ImportError:
         print('Missing {}'.format(module_name))
     except Exception as e:
-        print(e)
+        print('Possible problem with module: {}, {}'.format(
+            module_name, e
+        ))
 
 modules = [
     'pandas', 'matplotlib', 'numpy', 'scipy', 'IPython', 'sklearn',
     'protobuf', 'numexpr', 'sympy', 'tensorflow', 'pymc3', 'theano',
-    'carl', 'h5py', 'keras'
+    'carl', 'h5py', 'keras', 'xlrd'
 ]
 
 for mod in modules:
