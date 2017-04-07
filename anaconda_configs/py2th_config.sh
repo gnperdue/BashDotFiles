@@ -15,3 +15,4 @@ conda install -q -y ipython
 conda install -q -y jupyter
 conda install -q -y pymysql
 conda install -q -y pandas-datareader
+conda install -q -y xlrd
