@@ -139,3 +139,17 @@ setupbrewinstalls() {
   export PATH="${PATH/\/Users\/gnperdue\/anaconda\/bin:/}"
   # don't set up a Python 3
 }
+
+setupminiconda2() {
+  # take anaconda out of the PATH...
+  export PATH="${PATH/\/Users\/perdue\/anaconda\/bin:/}"
+  export PATH="${PATH/\/Users\/perdue\/miniconda3\/bin:/}"
+  export PATH="/Users/perdue/miniconda2/bin:$PATH"
+}
+
+setupminiconda3() {
+  # take anaconda out of the PATH...
+  export PATH="${PATH/\/Users\/perdue\/anaconda\/bin:/}"
+  export PATH="${PATH/\/Users\/perdue\/miniconda2\/bin:/}"
+  export PATH="/Users/perdue/miniconda3/bin:$PATH"
+}
