@@ -1,8 +1,8 @@
 #!/bin/bash
 
 conda info --envs
-conda remove --name py3th --all
-conda create -q -y -n py3th python=3.5
+conda remove --yes --name py3th --all
+conda create -q -y -n py3th python=3.4
 . activate py3th
 
 conda install -q -y -c conda-forge pymc3
