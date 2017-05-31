@@ -21,7 +21,7 @@ def test_module_version(module_name):
 modules = [
     'pandas', 'matplotlib', 'numpy', 'scipy', 'IPython', 'sklearn',
     'skimage', 'protobuf', 'numexpr', 'sympy', 'tensorflow', 'pymc3',
-    'theano', 'carl', 'h5py', 'keras', 'xlrd', 'lasagne', 'yaml'
+    'theano', 'h5py', 'keras', 'xlrd', 'lasagne', 'yaml', 'nltk',
 ]
 
 for mod in modules:
