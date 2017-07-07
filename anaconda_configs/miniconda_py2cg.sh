@@ -31,6 +31,7 @@ conda create -q -y -n $CONDAENVNAME python=2.7
 
 conda install -q -y -c conda-forge scikit-image
 conda install -q -y -c conda-forge scikit-learn
+conda install -q -y -c conda-forge deepdish
 conda install -q -y flake8
 conda install -q -y jedi
 conda install -q -y ipython
