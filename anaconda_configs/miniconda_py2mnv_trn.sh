@@ -31,7 +31,6 @@ conda create -q -y -n $CONDAENVNAME python=2.7
 
 export TF_PYTHON_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.2.1-py2-none-any.whl
 pip install --ignore-installed --upgrade $TF_PYTHON_URL
-pip install h5py
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
