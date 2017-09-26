@@ -6,7 +6,7 @@ export PATH=$PATH:~/Scripts:~/Dropbox/UnixSettings/LocalScripts
 # alias ssh="ssh -Y"
 
 # move /usr/loca/bin up front for brew
-# export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/bin:$PATH
 
 # Other tools and scripts
 # export PATH=$HOME/bin:$PATH
