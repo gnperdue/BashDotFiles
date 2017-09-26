@@ -1,3 +1,5 @@
 Recall, need osxkeychain helper on Mac. Should come with Xcode.
 
 	git config --global credential.helper osxkeychain
+
+See https://help.github.com/articles/caching-your-github-password-in-git/
