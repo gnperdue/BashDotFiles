@@ -1,4 +1,4 @@
-export PATH=$PATH:~/Scripts:~/Dropbox/UnixSettings/LocalScripts
+export PATH=$PATH:~/PersonalScripts:~/Dropbox/UnixSettings/LocalScripts
 
 # Tiger fix for "man"
 # export MANPATH=/usr/share/man:$MANPATH
