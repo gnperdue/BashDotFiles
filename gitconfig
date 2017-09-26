@@ -1,6 +1,9 @@
 [user]
         name = Gabriel Perdue
-        email = 
+        email = gnperdue@me.com
+[github]
+        user = gnperdue
+        token =
 [color]
         ui = true
         diff = true
@@ -11,3 +14,5 @@
         excludesfile = //home//.gitignore_global
 [alias]
         show-graph = log --graph --abbrev-commit --pretty=oneline
+[credential]
+        helper = osxkeychain

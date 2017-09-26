@@ -1,0 +1,3 @@
+Recall, need osxkeychain helper on Mac. Should come with Xcode.
+
+	git config --global credential.helper osxkeychain
