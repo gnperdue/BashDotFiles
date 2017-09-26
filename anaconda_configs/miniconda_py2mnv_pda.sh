@@ -39,7 +39,7 @@ conda install -q -y pymysql
 conda install -q -y sqlalchemy
 conda install -q -y pandas-datareader
 
-export TF_PYTHON_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.2.1-py2-none-any.whl
+export TF_PYTHON_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.3.0-py2-none-any.whl
 pip install --ignore-installed --upgrade $TF_PYTHON_URL
 pip install keras
 pip install h5py

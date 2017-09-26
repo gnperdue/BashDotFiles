@@ -29,7 +29,7 @@ conda remove --yes --name $CONDAENVNAME --all
 conda create -q -y -n $CONDAENVNAME python=2.7
 . activate $CONDAENVNAME
 
-export TF_PYTHON_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.2.1-py2-none-any.whl
+export TF_PYTHON_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.3.0-py2-none-any.whl
 pip install --ignore-installed --upgrade $TF_PYTHON_URL
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"

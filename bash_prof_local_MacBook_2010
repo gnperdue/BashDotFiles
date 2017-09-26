@@ -146,6 +146,8 @@ setupminiconda2() {
   export PATH="${PATH/\/Users\/gnperdue\/miniconda2\/bin:/}"
   export PATH="/Users/gnperdue/miniconda2/bin:$PATH"
 }
+alias mnvpda="setupminiconda2 && . activate py2mnv_pda"
+alias mnvtrn="setupminiconda2 && . activate py2mnv_trn"
 
 setupminiconda3() {
   # take anaconda out of the PATH...
