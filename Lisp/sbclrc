@@ -1,0 +1,11 @@
+(load "~/quicklisp/setup.lisp")
+
+;;; The following lines added by ql:add-to-init-file:
+#-quicklisp
+(let ((quicklisp-init (merge-pathnames "quicklisp/setup.lisp"
+                                       (user-homedir-pathname))))
+  (when (probe-file quicklisp-init)
+    (load quicklisp-init)))
+
+;;; load "usocket" for work with Ch7 in Land Of Lisp in SBCL
+(ql:quickload "usocket")

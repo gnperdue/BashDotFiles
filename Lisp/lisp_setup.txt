@@ -1,0 +1,72 @@
+# Lisp
+
+## SBCL
+
+* `brew install sbcl --with-ldb`
+* `brew install rlwrap`
+
+## QuickLisp
+
+* `curl -O http://beta.quicklisp.org/quicklisp.lisp`
+* `curl -O http://beta.quicklisp.org/quicklisp.lisp.asc`
+* `sbcl --load quicklisp.lisp`
+* In SBCL: `(quicklisp-quickstart:install)`
+
+      ==== quicklisp installed ====
+        To load a system, use: (ql:quickload "system-name")
+        To find systems, use: (ql:system-apropos "term")
+        To load Quicklisp every time you start Lisp, use: (ql:add-to-init-file)
+        For more information, see http://www.quicklisp.org/beta/
+
+* `ln -s /Users/perdue/Dropbox/Programming/Programming/Lisp/sbclrc .sbclrc`
+* Or: `ln -s /Users/gnperdue/Dropbox/Programming/Programming/Lisp/sbclrc .sbclrc`
+* In SBCL: `(ql:add-to-init-file)`
+* In SBCL: `(ql:quickload "quicklisp-slime-helper")`
+
+## Emacs
+
+* `brew install emacs`
+* In Terminal.app preferences, check "Use option as meta"
+
+## More QuickLisp Packages:
+
+#### 2015/04/05 - usocket
+
+    Lisp$ sbcl
+    This is SBCL 1.2.2, an implementation of ANSI Common Lisp.
+    More information about SBCL is available at <http://www.sbcl.org/>.
+    
+    SBCL is free software, provided as is, with absolutely no warranty.
+    It is mostly in the public domain; some portions are provided under
+    BSD-style licenses.  See the CREDITS and COPYING files in the
+    distribution for more information.
+    * (load "~/quicklisp/setup.lisp")
+    
+    T
+    * (ql:quickload "usocket")
+    To load "usocket":
+    Install 1 Quicklisp release:
+    usocket
+    ; Fetching #<URL "http://beta.quicklisp.org/archive/usocket/2013-07-20/usocket-0.6.1.tgz">
+    ; 69.76KB
+    ==================================================
+    71,431 bytes in 0.05 seconds (1484.19KB/sec)
+    ; Loading "usocket"
+    [package usocket].........
+    ("usocket")
+
+Update `~/.sbclrc` file to load "usocket":
+
+    ~$ more .sbclrc
+    (load "~/quicklisp/setup.lisp")
+    
+    ;;; The following lines added by ql:add-to-init-file:
+    #-quicklisp
+    (let ((quicklisp-init (merge-pathnames "quicklisp/setup.lisp"
+                                           (user-homedir-pathname))))
+      (when (probe-file quicklisp-init)
+        (load quicklisp-init)))
+    
+    ;;; load "usocket" for work with Ch7 in Land Of Lisp in SBCL
+    (ql:quickload "usocket")
+
