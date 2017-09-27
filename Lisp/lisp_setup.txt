@@ -18,9 +18,8 @@
         To load Quicklisp every time you start Lisp, use: (ql:add-to-init-file)
         For more information, see http://www.quicklisp.org/beta/
 
-* `ln -s /Users/perdue/Dropbox/Programming/Programming/Lisp/sbclrc .sbclrc`
-* Or: `ln -s /Users/gnperdue/Dropbox/Programming/Programming/Lisp/sbclrc .sbclrc`
-* In SBCL: `(ql:add-to-init-file)`
+* `ln -s $HOME/Dropbox/UnixSettings/BashDotFiles/Lisp/sbclrc ~/.sbclrc`
+* In SBCL: `(ql:add-to-init-file)` --> NOT NEEDED if emacs already has it.
 * In SBCL: `(ql:quickload "quicklisp-slime-helper")`
 
 ## Emacs
