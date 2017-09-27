@@ -23,14 +23,14 @@ fi
 export PATH="$HOME/$MINIDIR/bin:$PATH"
 
 conda info --envs
-conda remove --name $CONDAENVNAME --all
+conda remove --yes --name $CONDAENVNAME --all
 conda create -q -y -n $CONDAENVNAME python=$PYVER
 . activate $CONDAENVNAME
 
 conda install -q -y -c conda-forge pymc3
 conda install -q -y -c conda-forge scikit-image
 conda install -q -y -c conda-forge scikit-learn
-conda install -q -y -c conda-forge tensorflow
+conda install -q -y -c conda-forge keras
 conda install -q -y flake8
 conda install -q -y jedi
 conda install -q -y ipython
