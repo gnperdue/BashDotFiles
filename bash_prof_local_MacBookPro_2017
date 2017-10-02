@@ -53,4 +53,5 @@ setupminiconda3() {
   export PATH="/Users/perdue/miniconda3/bin:$PATH"
 }
 alias py3dl="setupminiconda3 && . activate py3dl"
+alias py3projq="setupminiconda3 && . activate py3projq"
 
