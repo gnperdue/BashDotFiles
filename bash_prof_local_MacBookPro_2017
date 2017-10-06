@@ -54,4 +54,5 @@ setupminiconda3() {
 }
 alias py3dl="setupminiconda3 && . activate py3dl"
 alias py3projq="setupminiconda3 && . activate py3projq"
+alias py3ed="setupminiconda3 && . activate py3ed"
 
