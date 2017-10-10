@@ -1,0 +1,54 @@
+export PATH=$PATH:~/PersonalScripts:~/Dropbox/UnixSettings/LocalScripts
+
+# Tiger fix for "man"
+# export MANPATH=/usr/share/man:$MANPATH
+# Needed for Tiger
+# alias ssh="ssh -Y"
+
+# move /usr/loca/bin up front for brew
+export PATH=/usr/local/bin:$PATH
+
+# Other tools and scripts
+# export PATH=$HOME/bin:$PATH
+
+# bash completion
+# v1.3
+# if [ -f $(brew --prefix)/etc/bash_completion ]; then
+#   . $(brew --prefix)/etc/bash_completion
+# fi
+
+# Wicked Cool...
+# export PATH=$PATH:${HOME}/Dropbox/UnixSettings/WickedCoolScripts
+
+# setupbrewinstalls() {
+#   # take anaconda out of the PATH...
+#   unalias ipn
+#   export PATH="${PATH/\/Users\/gnperdue\/anaconda\/bin:/}"
+#   # don't set up a Python 3
+# }
+
+setupminiconda2() {
+  # take anaconda out of the PATH...
+  export PATH="${PATH/\/Users\/perdue\/anaconda\/bin:/}"
+  # take miniconda3,2 out of the PATH...
+  export PATH="${PATH/\/Users\/perdue\/miniconda3\/bin:/}"
+  export PATH="${PATH/\/Users\/perdue\/miniconda2\/bin:/}"
+  # add miniconda2 to PATH
+  export PATH="/Users/perdue/miniconda2/bin:$PATH"
+}
+alias mnvpda="setupminiconda2 && . activate py2mnv_pda"
+alias mnvtrn="setupminiconda2 && . activate py2mnv_trn"
+
+setupminiconda3() {
+  # take anaconda out of the PATH...
+  export PATH="${PATH/\/Users\/perdue\/anaconda\/bin:/}"
+  # take miniconda3,2 out of the PATH...
+  export PATH="${PATH/\/Users\/perdue\/miniconda3\/bin:/}"
+  export PATH="${PATH/\/Users\/perdue\/miniconda2\/bin:/}"
+  # add miniconda3 to PATH
+  export PATH="/Users/perdue/miniconda3/bin:$PATH"
+}
+alias py3dl="setupminiconda3 && . activate py3dl"
+alias py3projq="setupminiconda3 && . activate py3projq"
+alias py3ed="setupminiconda3 && . activate py3ed"
+
