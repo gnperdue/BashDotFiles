@@ -37,7 +37,15 @@ conda install -q -y pymysql
 conda install -q -y pyyaml
 conda install -q -y pandas-datareader
 
-python -m pip install --user --global-option=--without-cppsimulator projectq
+# python -m pip install --global-option=--without-cppsimulator --user projectq
+# python -m pip install --user --global-option=--without-cppsimulator projectq
+pushd /tmp >& /dev/null
+git clone https://github.com/ProjectQ-Framework/ProjectQ.git
+pushd ProjectQ >& /dev/null
+python -m pip install --user .
+popd >& /dev/null
+rm -rf ProjectQ
+popd >& /dev/null
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
