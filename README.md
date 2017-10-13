@@ -29,7 +29,8 @@ Next, edit `/etc/ssh/ssh_config` and add
 
 ## Shell
 
-* Download and install iTerm2. Set up preferences loading.
+* Download and install iTerm2. Set up preferences loading. (Start with the
+saved plist file here.)
 * Check `BashDotFiles` (GitHub if needed) and check the installler scripts.
 * Install XCode with support tools
 * Get Homebrew from https://brew.sh & install needed packages.
