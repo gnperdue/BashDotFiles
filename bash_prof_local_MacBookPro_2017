@@ -40,8 +40,8 @@ setupminiconda2() {
   # add miniconda2 to PATH
   export PATH="/Users/perdue/miniconda2/bin:$PATH"
 }
-alias mnvpda="setupminiconda2 && . activate py2mnv_pda"
-alias mnvtrn="setupminiconda2 && . activate py2mnv_trn"
+alias mnvpda="setupminiconda2 && . activate py2mnv_pda"  # TF plus light support (HDF5, etc.)
+alias mnvtrn="setupminiconda2 && . activate py2mnv_trn"  # TF _only_
 
 setupminiconda3() {
   # take anaconda out of the PATH...
@@ -52,7 +52,8 @@ setupminiconda3() {
   # add miniconda3 to PATH
   export PATH="/Users/perdue/miniconda3/bin:$PATH"
 }
-alias py3dl="setupminiconda3 && . activate py3dl"
-alias py3projq="setupminiconda3 && . activate py3projq"
-alias py3ed="setupminiconda3 && . activate py3ed"
+alias py3dl="setupminiconda3 && . activate py3dl"        # General deep learning
+alias py3projq="setupminiconda3 && . activate py3projq"  # ProjectQ
+alias py3ed="setupminiconda3 && . activate py3ed"        # Edward work
+alias py3opf="setupminiconda3 && . activate py3opf"      # OpenFermion
 
