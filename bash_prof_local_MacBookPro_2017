@@ -42,6 +42,7 @@ setupminiconda2() {
 }
 alias mnvpda="setupminiconda2 && . activate py2mnv_pda"  # TF plus light support (HDF5, etc.)
 alias mnvtrn="setupminiconda2 && . activate py2mnv_trn"  # TF _only_
+alias py2pyq="setupminiconda2 && . activate py2pyq"      # Rigetti QProg
 
 setupminiconda3() {
   # take anaconda out of the PATH...
