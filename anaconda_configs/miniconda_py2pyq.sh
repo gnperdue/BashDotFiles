@@ -35,6 +35,8 @@ conda install -q -y ipython
 conda install -q -y jupyter
 conda install -q -y pymysql
 conda install -q -y sqlalchemy
+conda install -q -y numpy
+conda install -q -y matplotlib
 
 pip install pyquil
 
