@@ -28,6 +28,13 @@ conda create -q -y -n $CONDAENVNAME python=2.7
 
 pip install -r reqs/bm_requirements.txt
 
+pushd /tmp >& /dev/null
+git clone https://github.com/jakevdp/JSAnimation.git
+pushd JSAnimation >& /dev/null
+python setup.py install
+popd >& /dev/null
+popd >& /dev/null
+
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
 echo "Activate the $CONDAENVNAME environment with"
