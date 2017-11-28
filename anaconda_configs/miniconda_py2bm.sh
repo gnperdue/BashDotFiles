@@ -26,7 +26,19 @@ conda remove --yes --name $CONDAENVNAME --all
 conda create -q -y -n $CONDAENVNAME python=2.7
 . activate $CONDAENVNAME
 
-pip install -r reqs/bm_requirements.txt
+conda install -q -y -c conda-forge scikit-image
+conda install -q -y -c conda-forge scikit-learn
+conda install -q -y -c conda-forge seaborn
+conda install -q -y -c conda-forge pillow
+conda install -q -y flake8
+conda install -q -y jedi
+conda install -q -y ipython
+conda install -q -y jupyter
+conda install -q -y pymysql
+conda install -q -y sqlalchemy
+conda install -q -y pandas-datareader
+
+pip install -r reqs/bm_requirements_short.txt
 
 pushd /tmp >& /dev/null
 git clone https://github.com/jakevdp/JSAnimation.git
