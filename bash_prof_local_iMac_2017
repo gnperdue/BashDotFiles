@@ -41,6 +41,7 @@ alias mnvtrn="setupminiconda2 && . activate py2mnv_trn"
 alias py2msc="setupminiconda2 && . activate py2msc"
 alias py2pyq="setupminiconda2 && . activate py2pyq"      # Rigetti QProg
 alias py2tf14="setupminiconda2 && . activate py2tf14"    # TensorFlow 1.4
+alias py2bm="setupminiconda2 && . activate py2bm"        # Monsta-hd Boltzmann stuff
 
 setupminiconda3() {
   # take anaconda out of the PATH...
