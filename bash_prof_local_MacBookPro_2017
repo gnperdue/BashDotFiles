@@ -44,6 +44,7 @@ alias mnvpda="setupminiconda2 && . activate py2mnv_pda"  # TF plus light support
 alias mnvtrn="setupminiconda2 && . activate py2mnv_trn"  # TF _only_
 alias py2pyq="setupminiconda2 && . activate py2pyq"      # Rigetti QProg
 alias py2tf14="setupminiconda2 && . activate py2tf14"    # TensorFlow 1.4
+alias py2trch="setupminiconda2 && . activate py2trch"    # PyTorch
 
 setupminiconda3() {
   # take anaconda out of the PATH...
