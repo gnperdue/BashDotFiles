@@ -40,6 +40,9 @@ conda install -q -y pymysql
 conda install -q -y sqlalchemy
 conda install -q -y pandas-datareader
 conda install -q -y h5py
+conda install -q -y ujson
+conda install -q -y tornado  # probably already installed at this point
+conda install -q -y gevent
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
