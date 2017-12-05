@@ -43,6 +43,7 @@ alias py2pyq="setupminiconda2 && . activate py2pyq"      # Rigetti QProg
 alias py2tf14="setupminiconda2 && . activate py2tf14"    # TensorFlow 1.4
 alias py2bm="setupminiconda2 && . activate py2bm"        # Monsta-hd Boltzmann stuff
 alias py2trch="setupminiconda2 && . activate py2trch"    # PyTorch
+alias py2horo="setupminiconda2 && . activate py2horo"    # TensorFlow 1.4 + Uber Horovod
 
 setupminiconda3() {
   # take anaconda out of the PATH...

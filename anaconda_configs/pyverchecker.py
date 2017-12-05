@@ -23,7 +23,7 @@ modules = [
     'pandas', 'matplotlib', 'numpy', 'scipy', 'IPython', 'sklearn',
     'skimage', 'protobuf', 'numexpr', 'sympy', 'tensorflow', 'pymc3',
     'theano', 'h5py', 'keras', 'xlrd', 'lasagne', 'yaml', 'nltk',
-    'deepdish', 'torch', 'tornado', 'gevent'
+    'deepdish', 'torch', 'tornado', 'gevent', 'horovod'
 ]
 
 for mod in modules:
