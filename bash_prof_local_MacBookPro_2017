@@ -59,4 +59,5 @@ alias py3dl="setupminiconda3 && . activate py3dl"        # General deep learning
 alias py3projq="setupminiconda3 && . activate py3projq"  # ProjectQ
 alias py3ed="setupminiconda3 && . activate py3ed"        # Edward work
 alias py3opf="setupminiconda3 && . activate py3opf"      # OpenFermion
+alias py3trch="setupminiconda3 && . activate py3trch"    # PyTorch
 
