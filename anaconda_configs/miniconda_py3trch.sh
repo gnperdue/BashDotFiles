@@ -49,6 +49,7 @@ conda install -q -y tornado  # probably already installed at this point
 conda install -q -y gevent
 conda install -q -y pycurl
 conda install -q -y aiohttp  # for High Performance Python examples
+conda install -q -y tqdm     # for Fluent Python
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
