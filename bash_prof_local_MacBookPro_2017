@@ -44,6 +44,7 @@ alias mnvpda="setupminiconda2 && . activate py2mnv_pda"  # TF plus light support
 alias mnvtrn="setupminiconda2 && . activate py2mnv_trn"  # TF _only_
 alias py2pyq="setupminiconda2 && . activate py2pyq"      # Rigetti QProg
 alias py2tf14="setupminiconda2 && . activate py2tf14"    # TensorFlow 1.4
+# alias py2tf15="setupminiconda2 && . activate py2tf15"    # TensorFlow 1.5
 alias py2trch="setupminiconda2 && . activate py2trch"    # PyTorch
 alias setuproot="source /Users/perdue/Software/build_root/bin/thisroot.sh" # py2tf14?
 
@@ -61,4 +62,5 @@ alias py3projq="setupminiconda3 && . activate py3projq"  # ProjectQ
 alias py3ed="setupminiconda3 && . activate py3ed"        # Edward work
 alias py3opf="setupminiconda3 && . activate py3opf"      # OpenFermion
 alias py3trch="setupminiconda3 && . activate py3trch"    # PyTorch
+alias py3tf15="setupminiconda3 && . activate py3tf15"    # TensorFlow 1.5
 
