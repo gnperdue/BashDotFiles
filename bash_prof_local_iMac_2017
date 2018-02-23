@@ -59,4 +59,5 @@ alias py3dl="setupminiconda3 && . activate py3dl"
 alias py3projq="setupminiconda3 && . activate py3projq"
 alias py3ed="setupminiconda3 && . activate py3ed"
 alias py3trch="setupminiconda3 && . activate py3trch"    # PyTorch
+alias py3tf15="setupminiconda3 && . activate py3tf15"    # TensorFlow 1.5
 
