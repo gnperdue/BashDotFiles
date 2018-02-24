@@ -27,6 +27,13 @@ export PATH=/usr/local/bin:$PATH
 #   # don't set up a Python 3
 # }
 
+function whoon {
+for ii in $(seq 1 7); do
+        ss=$(ssh -K -X -Y perdue@minervagpvm0${ii}.FNAL.GOV  who | wc -l)
+        echo "MINERvA VM0${ii}: $ss"
+done
+}
+
 setupminiconda2() {
   # take anaconda out of the PATH...
   export PATH="${PATH/\/Users\/perdue\/anaconda\/bin:/}"
