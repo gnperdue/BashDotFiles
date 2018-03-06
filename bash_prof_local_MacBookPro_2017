@@ -62,5 +62,5 @@ alias py3projq="setupminiconda3 && . activate py3projq"  # ProjectQ
 alias py3ed="setupminiconda3 && . activate py3ed"        # Edward work
 alias py3opf="setupminiconda3 && . activate py3opf"      # OpenFermion
 alias py3trch="setupminiconda3 && . activate py3trch"    # PyTorch
-alias py3tf15="setupminiconda3 && . activate py3tf15"    # TensorFlow 1.5
+alias py3tf16="setupminiconda3 && . activate py3tf16"    # TensorFlow 1.6
 
