@@ -40,13 +40,10 @@ setupminiconda2() {
   # add miniconda2 to PATH
   export PATH="/Users/perdue/miniconda2/bin:$PATH"
 }
-alias mnvpda="setupminiconda2 && . activate py2mnv_pda"  # TF plus light support (HDF5, etc.)
-alias mnvtrn="setupminiconda2 && . activate py2mnv_trn"  # TF _only_
+alias mnvpda2="setupminiconda2 && . activate py2mnv_pda"  # TF plus light support (HDF5, etc.)
+alias mnvtrn2="setupminiconda2 && . activate py2mnv_trn"  # TF _only_
 # alias py2pyq="setupminiconda2 && . activate py2pyq"      # Rigetti QProg
-# alias py2tf14="setupminiconda2 && . activate py2tf14"    # TensorFlow 1.4
-alias py2tf15="setupminiconda2 && . activate py2tf15"    # TensorFlow 1.5
-# alias py2trch="setupminiconda2 && . activate py2trch"    # PyTorch
-alias setuproot="source /Users/perdue/Software/build_root/bin/thisroot.sh" # py2tf14?
+# alias setuproot="source /Users/perdue/Software/build_root/bin/thisroot.sh" # py2tf14?
 
 setupminiconda3() {
   # take anaconda out of the PATH...
@@ -57,12 +54,13 @@ setupminiconda3() {
   # add miniconda3 to PATH
   export PATH="/Users/perdue/miniconda3/bin:$PATH"
 }
+alias mnvpda3="setupminiconda3 && . activate py3mnv_pda"  # TF plus light support (HDF5, etc.)
+alias mnvtrn3="setupminiconda3 && . activate py3mnv_trn"  # TF _only_
 alias py3dl="setupminiconda3 && . activate py3dl"        # General deep learning
 alias py3projq="setupminiconda3 && . activate py3projq"  # ProjectQ
 alias py3ed="setupminiconda3 && . activate py3ed"        # Edward work
 alias py3opf="setupminiconda3 && . activate py3opf"      # OpenFermion
 alias py3trch="setupminiconda3 && . activate py3trch"    # PyTorch
-alias py3tf17="setupminiconda3 && . activate py3tf17"    # TensorFlow 1.7
 alias py3tf18="setupminiconda3 && . activate py3tf18"    # TensorFlow 1.8
 alias py3util="setupminiconda3 && . activate py3util"    # Some Py3 stuff (changes)
 
