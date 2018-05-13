@@ -1,17 +1,24 @@
 #!/bin/bash
 
-# TensorFlow package for MINERvA PREDICTION and ANALYSIS
+# TensorFlow 1.8 and some useful parts of the scipy universe
 
 ARCH=`uname`
 echo `date`
 
-CONDAENVNAME="py2mnv_pda"
+PYMINOR=7
+PYMAJOR=2
+TFMAJOR=1
+TFMINOR=8
+TFPATCH=0
+CONDAENVNAME="py${PYMAJOR}mnv_pda"
+PYVER="${PYMAJOR}.${PYMINOR}"
+export TF_PYTHON_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-${TFMAJOR}.${TFMINOR}.${TFPATCH}-py${PYMAJOR}-none-any.whl
 CONDAINSTALL=""
 MINIDIR=""
 
 if [[ $ARCH == "Darwin" ]]; then
-  CONDAINSTALL=Miniconda2-latest-MacOSX-x86_64.sh
-  MINIDIR="miniconda2"
+  CONDAINSTALL=Miniconda${PYMAJOR}-latest-MacOSX-x86_64.sh
+  MINIDIR="miniconda${PYMAJOR}"
 else
   echo "Only configured for Mac OSX so far."
   exit 1
@@ -26,7 +33,7 @@ export PATH="$HOME/$MINIDIR/bin:$PATH"
 
 conda info --envs
 conda remove --yes --name $CONDAENVNAME --all
-conda create -q -y -n $CONDAENVNAME python=2.7
+conda create -q -y -n $CONDAENVNAME python=$PYVER
 . activate $CONDAENVNAME
 
 conda install -q -y -c conda-forge scikit-image
@@ -38,11 +45,13 @@ conda install -q -y jupyter
 conda install -q -y pymysql
 conda install -q -y sqlalchemy
 conda install -q -y pandas-datareader
+conda install -q -y pyqtgraph
+conda install -q -y xlrd
+conda install -q -y cython
 
-export TF_PYTHON_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.3.0-py2-none-any.whl
 pip install --ignore-installed --upgrade $TF_PYTHON_URL
-pip install keras
 pip install h5py
+# pip install prettytensor
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"

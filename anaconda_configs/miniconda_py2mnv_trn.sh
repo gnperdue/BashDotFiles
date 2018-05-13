@@ -1,17 +1,24 @@
 #!/bin/bash
 
-# TensorFlow package for MINERvA TRAINING
+# TensorFlow 1.8 only (minerva train)
 
 ARCH=`uname`
 echo `date`
 
-CONDAENVNAME="py2mnv_trn"
+PYMAJOR=2
+PYMINOR=7
+TFMAJOR=1
+TFMINOR=8
+TFPATCH=0
+CONDAENVNAME="py${PYMAJOR}mnv_trn"
+PYVER="${PYMAJOR}.${PYMINOR}"
+export TF_PYTHON_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-${TFMAJOR}.${TFMINOR}.${TFPATCH}-py${PYMAJOR}-none-any.whl
 CONDAINSTALL=""
 MINIDIR=""
 
 if [[ $ARCH == "Darwin" ]]; then
-  CONDAINSTALL=Miniconda2-latest-MacOSX-x86_64.sh
-  MINIDIR="miniconda2"
+  CONDAINSTALL=Miniconda${PYMAJOR}-latest-MacOSX-x86_64.sh
+  MINIDIR="miniconda${PYMAJOR}"
 else
   echo "Only configured for Mac OSX so far."
   exit 1
@@ -26,11 +33,11 @@ export PATH="$HOME/$MINIDIR/bin:$PATH"
 
 conda info --envs
 conda remove --yes --name $CONDAENVNAME --all
-conda create -q -y -n $CONDAENVNAME python=2.7
+conda create -q -y -n $CONDAENVNAME python=$PYVER
 . activate $CONDAENVNAME
 
-export TF_PYTHON_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.3.0-py2-none-any.whl
 pip install --ignore-installed --upgrade $TF_PYTHON_URL
+pip install h5py
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
