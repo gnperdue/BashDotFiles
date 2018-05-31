@@ -41,6 +41,7 @@ conda install -q -y -c conda-forge scikit-learn
 conda install -q -y flake8
 conda install -q -y jedi
 conda install -q -y ipython
+conda install -q -y -c conda-forge ipdb
 conda install -q -y jupyter
 conda install -q -y pymysql
 conda install -q -y sqlalchemy
