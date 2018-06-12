@@ -63,4 +63,5 @@ alias py3opf="setupminiconda3 && . activate py3opf"      # OpenFermion
 alias py3trch="setupminiconda3 && . activate py3trch"    # PyTorch
 alias py3tf18="setupminiconda3 && . activate py3tf18"    # TensorFlow 1.8
 alias py3util="setupminiconda3 && . activate py3util"    # Some Py3 stuff (changes)
+alias py3pymc="setupminiconda3 && . activate py3pymc"    # PyMC3 stuff
 
