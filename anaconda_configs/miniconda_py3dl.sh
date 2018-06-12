@@ -27,6 +27,7 @@ conda remove --yes --name $CONDAENVNAME --all
 conda create -q -y -n $CONDAENVNAME python=$PYVER
 . activate $CONDAENVNAME
 
+# conda install -q -y -c conda-forge praw
 conda install -q -y -c conda-forge pymc3
 conda install -q -y -c conda-forge scikit-image
 conda install -q -y -c conda-forge scikit-learn
