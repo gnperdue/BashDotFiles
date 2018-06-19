@@ -52,7 +52,10 @@ conda install -q -y cython
 pip install --no-cache-dir --ignore-installed --upgrade msgpack
 pip install --no-cache-dir --ignore-installed --upgrade $TF_PYTHON_URL
 pip install --no-cache-dir h5py
-pip install --no-cache-dir gym
+### just bare bones gym
+# pip install --no-cache-dir gym
+### if you have all the deps, see https://github.com/openai/gym
+pip install --no-cache-dir 'gym[all]'
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
