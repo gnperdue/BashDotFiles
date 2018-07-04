@@ -44,6 +44,7 @@ alias mnvpda2="setupminiconda2 && . activate py2mnv_pda"  # TF plus light suppor
 alias mnvtrn2="setupminiconda2 && . activate py2mnv_trn"  # TF _only_
 # alias py2pyq="setupminiconda2 && . activate py2pyq"      # Rigetti QProg
 # alias setuproot="source /Users/perdue/Software/build_root/bin/thisroot.sh" # py2tf14?
+alias py2a="setupminiconda2 && . activate py2a"  # TF, etc. for use with atom (pyls)
 
 setupminiconda3() {
   # take anaconda out of the PATH...
@@ -65,4 +66,5 @@ alias py3tf18="setupminiconda3 && . activate py3tf18"    # TensorFlow 1.8
 alias py3util="setupminiconda3 && . activate py3util"    # Some Py3 stuff (changes)
 alias py3pymc="setupminiconda3 && . activate py3pymc"    # PyMC3 stuff
 alias py3gym="setupminiconda3 && . activate py3gym"      # TF 1.8, OpenAI gym
+alias py3a="setupminiconda3 && . activate py3a"  # TF, etc. for use with atom (pyls)
 
