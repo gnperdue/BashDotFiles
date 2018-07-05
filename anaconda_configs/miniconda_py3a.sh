@@ -42,6 +42,7 @@ conda create -q -y -n $CONDAENVNAME python=$PYVER
 
 pip install 'python-language-server[all]'
 
+conda install -q -y -c conda-forge xgboost
 conda install -q -y scikit-image
 conda install -q -y scikit-learn
 conda install -q -y ipython
