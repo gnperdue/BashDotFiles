@@ -45,6 +45,7 @@ setupminiconda2() {
 }
 alias mnvpda2="setupminiconda2 && . activate py2mnv_pda"
 alias mnvtrn2="setupminiconda2 && . activate py2mnv_trn"
+alias py2a="setupminiconda2 && . activate py2a"  # TF, etc. for use with atom (pyls)
 # alias mnvpda="setupminiconda2 && . activate py2mnv_pda"
 # alias mnvtrn="setupminiconda2 && . activate py2mnv_trn"
 # alias py2msc="setupminiconda2 && . activate py2msc"
@@ -64,6 +65,7 @@ setupminiconda3() {
 alias mnvpda3="setupminiconda3 && . activate py3mnv_pda"
 alias mnvtrn3="setupminiconda3 && . activate py3mnv_trn"
 alias py3gym="setupminiconda3 && . activate py3gym"      # TF 1.8, OpenAI gym
+alias py3a="setupminiconda3 && . activate py3a"  # TF, etc. for use with atom (pyls)
 # alias py3dl="setupminiconda3 && . activate py3dl"
 # alias py3projq="setupminiconda3 && . activate py3projq"
 # alias py3ed="setupminiconda3 && . activate py3ed"
