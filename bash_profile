@@ -1,5 +1,7 @@
 # keep core dumps
-ulimit -c unlimited
+# ulimit -c unlimited
+# no core dumps...
+ulimit -c 0
 
 # umask - set default file permissions
 # umask u=rwx,g=rwx,o=r
