@@ -53,6 +53,7 @@ conda install -q -y pandas-datareader
 conda install -q -y pyqtgraph
 conda install -q -y xlrd
 conda install -q -y cython
+conda install -q -y pyyaml
 
 pip install --no-cache-dir --ignore-installed --upgrade $TF_PYTHON_URL
 pip install --no-cache-dir h5py
