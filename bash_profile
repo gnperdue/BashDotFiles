@@ -215,11 +215,11 @@ alias gpvm05="ssh perdue@minervagpvm05.fnal.gov"
 alias gpvm06="ssh perdue@minervagpvm06.fnal.gov"
 alias gpvm07="ssh perdue@minervagpvm07.fnal.gov"
 alias lbne1="ssh perdue@lbnegpvm01.fnal.gov"
-alias captmnvgpvm01="ssh perdue@captmnvgpvm01.fnal.gov"
 
 # GENIE stuff
 alias hepforge="ssh gnperdue@login.hepforge.org"
 alias genie01="ssh perdue@geniegpvm01.fnal.gov"
+alias genie02="ssh perdue@geniegpvm02.fnal.gov"
 
 # Liaison stuff
 alias cdcvs="ssh -l minervacvs cdcvs.fnal.gov"
