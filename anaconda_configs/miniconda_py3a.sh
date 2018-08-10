@@ -2,7 +2,7 @@
 
 # "py3a" - for Python 3 with atom. 
 
-# TF 1.9, python-language-server (for atom), other valued packages.
+# TF 1.10, python-language-server (for atom), other valued packages.
 # Note, this env has issues with TensorBoard (should use a bare TF only
 # env for TB).
 
@@ -12,7 +12,7 @@ echo `date`
 PYMAJOR=3
 PYMINOR=6
 TFMAJOR=1
-TFMINOR=9
+TFMINOR=10
 TFPATCH=0
 CONDAENVNAME="py${PYMAJOR}a"
 PYVER="${PYMAJOR}.${PYMINOR}"
