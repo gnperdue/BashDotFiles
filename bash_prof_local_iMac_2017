@@ -46,6 +46,7 @@ setupminiconda2() {
 alias mnvpda2="setupminiconda2 && . activate py2mnv_pda"
 alias mnvtrn2="setupminiconda2 && . activate py2mnv_trn"
 alias py2a="setupminiconda2 && . activate py2a"  # TF, etc. for use with atom (pyls)
+alias py2b="setupminiconda2 && . activate py2b"  # "bare" Python 2 (lang server, ipython, jupyter)
 # alias mnvpda="setupminiconda2 && . activate py2mnv_pda"
 # alias mnvtrn="setupminiconda2 && . activate py2mnv_trn"
 # alias py2msc="setupminiconda2 && . activate py2msc"

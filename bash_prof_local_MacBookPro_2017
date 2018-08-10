@@ -45,6 +45,7 @@ alias mnvtrn2="setupminiconda2 && . activate py2mnv_trn"  # TF _only_
 # alias py2pyq="setupminiconda2 && . activate py2pyq"      # Rigetti QProg
 # alias setuproot="source /Users/perdue/Software/build_root/bin/thisroot.sh" # py2tf14?
 alias py2a="setupminiconda2 && . activate py2a"  # TF, etc. for use with atom (pyls)
+alias py2b="setupminiconda2 && . activate py2b"  # "bare" Python 2 (lang server, ipython, jupyter)
 
 setupminiconda3() {
   # take anaconda out of the PATH...
