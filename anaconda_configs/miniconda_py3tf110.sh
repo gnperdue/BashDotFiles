@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# TensorFlow 1.9 and h5py
+# TensorFlow 1.10 and h5py
 
 ARCH=`uname`
 echo `date`
@@ -8,7 +8,7 @@ echo `date`
 PYMAJOR=3
 PYMINOR=6
 TFMAJOR=1
-TFMINOR=9
+TFMINOR=10
 TFPATCH=0
 CONDAENVNAME="py${PYMAJOR}tf${TFMAJOR}${TFMINOR}"
 PYVER="${PYMAJOR}.${PYMINOR}"
