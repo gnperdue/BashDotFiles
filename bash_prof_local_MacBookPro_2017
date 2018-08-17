@@ -8,6 +8,9 @@ export PATH=$PATH:~/PersonalScripts:~/Dropbox/UnixSettings/LocalScripts
 # move /usr/loca/bin up front for brew
 export PATH=/usr/local/bin:$PATH
 
+# get locally installed binaries of interest - put it at the back for now
+export PATH=$PATH:/Users/perdue/Software/bin
+
 # Other tools and scripts
 # export PATH=$HOME/bin:$PATH
 
