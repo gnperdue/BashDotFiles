@@ -1,6 +1,10 @@
 #!/bin/bash
 
-# TensorFlow 1.8 and some useful parts of the scipy universe
+# TensorFlow 1.8 and some useful parts of the scipy universe,
+# python-language-server (for atom), other valued packages, etc.
+# Note, this env has issues with TensorBoard (should use a bare TF only
+# env for TB).
+
 
 ARCH=`uname`
 echo `date`
@@ -36,12 +40,11 @@ conda remove --yes --name $CONDAENVNAME --all
 conda create -q -y -n $CONDAENVNAME python=$PYVER
 . activate $CONDAENVNAME
 
-conda install -q -y -c conda-forge scikit-image
-conda install -q -y -c conda-forge scikit-learn
-conda install -q -y flake8
-conda install -q -y jedi
+pip install 'python-language-server[all]'
+
+conda install -q -y scikit-image
+conda install -q -y scikit-learn
 conda install -q -y ipython
-conda install -q -y -c conda-forge ipdb
 conda install -q -y jupyter
 conda install -q -y pymysql
 conda install -q -y sqlalchemy
@@ -49,9 +52,10 @@ conda install -q -y pandas-datareader
 conda install -q -y pyqtgraph
 conda install -q -y xlrd
 conda install -q -y cython
+conda install -q -y pyyaml
 
-pip install --ignore-installed --upgrade $TF_PYTHON_URL
-pip install h5py
+pip install --no-cache-dir --ignore-installed --upgrade $TF_PYTHON_URL
+pip install --no-cache-dir h5py
 # pip install prettytensor
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
