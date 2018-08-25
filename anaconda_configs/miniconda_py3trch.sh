@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# PyTorch
+# PyTorch with python-language-server
 
 ARCH=`uname`
 echo `date`
@@ -30,14 +30,12 @@ conda remove --yes --name $CONDAENVNAME --all
 conda create -q -y -n $CONDAENVNAME python=$PYVER
 . activate $CONDAENVNAME
 
-# Cannot currently get PyTorch 0.4.0 from `-c pytorch` -> MKL version
-# conflict that seems irreparable for now...
-# conda install -q -y -c anaconda mkl=2018.0.1
-conda install -q -y -c soumith pytorch torchvision
-conda install -q -y -c conda-forge scikit-image
-conda install -q -y -c conda-forge scikit-learn
-conda install -q -y flake8
-conda install -q -y jedi
+pip install 'python-language-server[all]'
+
+conda install -q -y pytorch torchvision -c pytorch
+conda install -q -y -c conda-forge xgboost
+conda install -q -y scikit-image
+conda install -q -y scikit-learn
 conda install -q -y ipython
 conda install -q -y jupyter
 conda install -q -y pymysql
