@@ -56,6 +56,9 @@ pip install --no-cache-dir cirq
 python -m pip install --user xacc
 python -m pip install --user xacc-rigetti
 python -m pip install --user xacc-dwave
+python -m pip install --user xacc-vqe
+python -m pip install --user tnqvm
+
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
