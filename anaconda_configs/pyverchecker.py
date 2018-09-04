@@ -24,7 +24,7 @@ modules = [
     'skimage', 'protobuf', 'numexpr', 'sympy', 'tensorflow', 'pymc3',
     'theano', 'h5py', 'keras', 'xlrd', 'lasagne', 'yaml', 'nltk',
     'deepdish', 'torch', 'tornado', 'gevent', 'horovod', 'pycurl',
-    'pyqtgraph', 'xgboost', 'pyls'
+    'pyqtgraph', 'xgboost', 'pyls', 'xacc'
 ]
 
 for mod in modules:
