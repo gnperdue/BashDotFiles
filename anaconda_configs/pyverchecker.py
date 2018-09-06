@@ -22,12 +22,11 @@ def test_module_version(module_name):
 modules = [
     'pandas', 'matplotlib', 'numpy', 'scipy', 'IPython', 'sklearn',
     'skimage', 'protobuf', 'numexpr', 'sympy', 'tensorflow', 'pymc3',
-    'theano', 'h5py', 'keras', 'xlrd', 'lasagne', 'yaml', 'nltk',
-    'deepdish', 'torch', 'tornado', 'gevent', 'horovod', 'pycurl',
-    'pyqtgraph', 'xgboost', 'pyls', 'xacc'
+    'theano', 'h5py', 'xlrd', 'lasagne', 'yaml', 'nltk', 'deepdish',
+    'torch', 'tornado', 'gevent', 'horovod', 'pycurl', 'pyqtgraph',
+    'xgboost', 'pyls', 'xacc'
 ]
 
 for mod in modules:
     test_module_version(mod)
 
-print("Note, Keras configuration is in $HOME/.keras/keras.json")
