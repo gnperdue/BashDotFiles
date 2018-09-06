@@ -31,6 +31,7 @@ conda create -q -y -n $CONDAENVNAME python=$PYVER
 . activate $CONDAENVNAME
 
 pip install 'python-language-server[all]'
+pip install typing_extensions   # Py 3.7 feature
 
 conda install -q -y pytorch torchvision -c pytorch
 conda install -q -y -c conda-forge xgboost
