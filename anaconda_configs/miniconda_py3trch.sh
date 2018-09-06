@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# PyTorch with python-language-server
+# Python 3.7 - PyTorch with python-language-server
 
 ARCH=`uname`
 echo `date`
 
 CONDAENVNAME="py3trch"
-PYVER=3.6
+PYVER=3.7
 CONDAINSTALL=""
 MINIDIR=""
 
