@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# "py3a" - for Python 3 with atom. 
+# "py3a" - for Python 3 with atom.
 
 # TF 1.10, python-language-server (for atom), other valued packages.
 # Note, this env has issues with TensorBoard (should use a bare TF only
@@ -56,6 +56,7 @@ conda install -q -y cython
 conda install -q -y pyyaml
 
 pip install --no-cache-dir --ignore-installed --upgrade $TF_PYTHON_URL
+pip install --upgrade tensorflow-probability
 pip install --no-cache-dir h5py
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
