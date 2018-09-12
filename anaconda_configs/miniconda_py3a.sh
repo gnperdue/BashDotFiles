@@ -54,6 +54,7 @@ conda install -q -y pyqtgraph
 conda install -q -y xlrd
 conda install -q -y cython
 conda install -q -y pyyaml
+conda install -q -y sympy
 
 pip install --no-cache-dir --ignore-installed --upgrade $TF_PYTHON_URL
 pip install --upgrade tensorflow-probability

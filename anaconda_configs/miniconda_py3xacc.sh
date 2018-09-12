@@ -46,6 +46,7 @@ conda install -q -y scikit-image
 conda install -q -y scikit-learn
 conda install -q -y ipython
 conda install -q -y jupyter
+conda install -q -y sympy
 
 pip install --no-cache-dir --ignore-installed --upgrade $TF_PYTHON_URL
 pip install --no-cache-dir h5py
