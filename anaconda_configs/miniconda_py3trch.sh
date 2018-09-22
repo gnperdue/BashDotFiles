@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Python 3.7 - PyTorch with python-language-server
+# Note, `swig` v3+ is required for gym. Consider `brew install swig`
 
 ARCH=`uname`
 echo `date`
@@ -49,6 +50,11 @@ conda install -q -y gevent
 conda install -q -y pycurl
 conda install -q -y aiohttp  # for High Performance Python examples
 conda install -q -y tqdm     # for Fluent Python
+
+### just bare bones gym
+# pip install --no-cache-dir gym
+### if you have all the deps, see https://github.com/openai/gym
+pip install --no-cache-dir 'gym[all]'
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
