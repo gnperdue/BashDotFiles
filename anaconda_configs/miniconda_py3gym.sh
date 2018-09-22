@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# TensorFlow 1.8, some useful parts of the scipy universe, and OpenAI gym
+# TensorFlow 1.10, PyTorch, some useful parts of the scipy universe, and OpenAI gym
+# Note, `swig` v3+ is required for gym. Consider `brew install swig`
 
 ARCH=`uname`
 echo `date`
@@ -8,7 +9,7 @@ echo `date`
 PYMAJOR=3
 PYMINOR=6
 TFMAJOR=1
-TFMINOR=8
+TFMINOR=10
 TFPATCH=0
 CONDAENVNAME="py${PYMAJOR}gym"
 PYVER="${PYMAJOR}.${PYMINOR}"
@@ -36,6 +37,9 @@ conda remove --yes --name $CONDAENVNAME --all
 conda create -q -y -n $CONDAENVNAME python=$PYVER
 . activate $CONDAENVNAME
 
+pip install 'python-language-server[all]'
+
+conda install -q -y pytorch torchvision -c pytorch
 conda install -q -y scikit-image
 conda install -q -y scikit-learn
 conda install -q -y flake8
