@@ -73,6 +73,7 @@ alias py3a="setupminiconda3 && . activate py3a"          # TF, etc. for use with
 alias py3tf110="setupminiconda3 && . activate py3tf110"  # TensorFlow 1.10
 alias py3trch="setupminiconda3 && . activate py3trch"    # PyTorch
 alias py3xacc="setupminiconda3 && . activate py3xacc"    # XACC, pyquil, cirq, TF
+alias py3mpnn="setupminiconda3 && . activate py3mpnn"    # stuff for MPNN with cheminformatics
 # alias py3dl="setupminiconda3 && . activate py3dl"
 # alias py3projq="setupminiconda3 && . activate py3projq"
 # alias py3ed="setupminiconda3 && . activate py3ed"
