@@ -50,11 +50,11 @@ conda install -q -y pycurl
 conda install -q -y aiohttp  # for High Performance Python examples
 conda install -q -y tqdm     # for Fluent Python
 
-conda install -q -y wget            # for nmp_qc
 conda install -q -y networkx        # for nmp_qc
 conda install -q -y joblib          # for nmp_qc
-conda install -q -y tensorboard     # for nmp_qc
 conda install -q -y rdkit -c rdkit  # http://www.rdkit.org
+pip install --no-cache-dir tensorboard_logger  # for nmp_qc
+pip install --no-cache-dir wget            # for nmp_qc
 
 ### just bare bones gym
 # pip install --no-cache-dir gym
