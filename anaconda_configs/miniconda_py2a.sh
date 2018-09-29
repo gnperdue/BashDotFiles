@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# "py2a" - for Python 2 with atom. 
+# "py2a" - for Python 2 with atom.
 
-# TF 1.10, python-language-server (for atom), other valued packages.
+# TF 1.11, python-language-server (for atom), other valued packages.
 # Note, this env has issues with TensorBoard (should use a bare TF only
 # env for TB).
 
@@ -12,7 +12,7 @@ echo `date`
 PYMAJOR=2
 PYMINOR=7
 TFMAJOR=1
-TFMINOR=10
+TFMINOR=11
 TFPATCH=0
 CONDAENVNAME="py${PYMAJOR}a"
 PYVER="${PYMAJOR}.${PYMINOR}"

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# TensorFlow 1.10, PyTorch, some useful parts of the scipy universe, and OpenAI gym
+# TensorFlow 1.11, PyTorch, some useful parts of the scipy universe, and OpenAI gym
 # Note, `swig` v3+ is required for gym. Consider `brew install swig`
 
 ARCH=`uname`
@@ -9,7 +9,7 @@ echo `date`
 PYMAJOR=3
 PYMINOR=6
 TFMAJOR=1
-TFMINOR=10
+TFMINOR=11
 TFPATCH=0
 CONDAENVNAME="py${PYMAJOR}gym"
 PYVER="${PYMAJOR}.${PYMINOR}"
