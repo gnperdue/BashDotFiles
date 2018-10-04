@@ -23,7 +23,7 @@ export PATH=$PATH:/Users/perdue/Software/bin
 # Wicked Cool...
 # export PATH=$PATH:${HOME}/Dropbox/UnixSettings/WickedCoolScripts
 
-# Anaconda3 
+# Anaconda3
 # export PATH="/Users/perdue/anaconda/bin:$PATH"
 # alias ipn="echo 'jupyter notebook: use %pylab inline or %matplotlib inline' && jupyter notebook"
 
@@ -65,7 +65,8 @@ alias py3dl="setupminiconda3 && . activate py3dl"        # General deep learning
 alias py3projq="setupminiconda3 && . activate py3projq"  # ProjectQ
 alias py3ed="setupminiconda3 && . activate py3ed"        # Edward work
 alias py3opf="setupminiconda3 && . activate py3opf"      # OpenFermion
-alias py3trch="setupminiconda3 && . activate py3trch"    # PyTorch
+alias py3trch="setupminiconda3 && . activate py3trch"    # PyTorch, Py 3.7
+alias py3fast="setupminiconda3 && . activate py3fast"    # PyTorch, fastai
 alias py3tf111="setupminiconda3 && . activate py3tf111"  # TensorFlow 1.11
 alias py3util="setupminiconda3 && . activate py3util"    # Some Py3 stuff (changes)
 alias py3pymc="setupminiconda3 && . activate py3pymc"    # PyMC3 stuff
@@ -73,4 +74,3 @@ alias py3gym="setupminiconda3 && . activate py3gym"      # TF 1.8, OpenAI gym
 alias py3a="setupminiconda3 && . activate py3a"  # TF, etc. for use with atom (pyls)
 alias py3xacc="setupminiconda3 && . activate py3xacc"    # XACC, pyquil, cirq, TF
 alias py3mpnn="setupminiconda3 && . activate py3mpnn"    # stuff for MPNN with cheminformatics
-
