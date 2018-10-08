@@ -40,12 +40,13 @@ conda remove --yes --name $CONDAENVNAME --all
 conda create -q -y -n $CONDAENVNAME python=$PYVER
 . activate $CONDAENVNAME
 
+pip install --upgrade pip
 pip install 'python-language-server[all]'
 
 conda install -q -y -c conda-forge xgboost
 conda install -q -y scikit-image
 conda install -q -y scikit-learn
-conda install -q -y ipython
+conda install -q -y ipython=6.5.0
 conda install -q -y jupyter
 conda install -q -y pymysql
 conda install -q -y sqlalchemy
