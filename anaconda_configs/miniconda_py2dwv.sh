@@ -6,6 +6,8 @@
 # Note, this env has issues with TensorBoard (should use a bare TF only
 # env for TB).
 
+# also, go to dwave pack and `python install.py`
+
 ARCH=`uname`
 echo `date`
 
@@ -59,6 +61,7 @@ conda install -q -y pyyaml
 pip install --no-cache-dir --ignore-installed --upgrade $TF_PYTHON_URL
 pip install --no-cache-dir h5py
 pip install --no-cache-dir dwave-ocean-sdk
+pip install --no-cache-dir arff  # for some D-wave example notebooks
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
