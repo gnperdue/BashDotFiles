@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# TensorFlow 1.10 and h5py
+# TensorFlow 1.11 **ONLY**
+# (h5py comes with TF now)
 
 ARCH=`uname`
 echo `date`
@@ -12,7 +13,6 @@ TFMINOR=11
 TFPATCH=0
 CONDAENVNAME="py${PYMAJOR}tf${TFMAJOR}${TFMINOR}"
 PYVER="${PYMAJOR}.${PYMINOR}"
-export TF_PYTHON_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-${TFMAJOR}.${TFMINOR}.${TFPATCH}-py3-none-any.whl
 CONDAINSTALL=""
 MINIDIR=""
 
@@ -36,8 +36,7 @@ conda remove --yes --name $CONDAENVNAME --all
 conda create -q -y -n $CONDAENVNAME python=$PYVER
 . activate $CONDAENVNAME
 
-pip install --ignore-installed --upgrade $TF_PYTHON_URL
-pip install h5py
+conda install -q -y tensorflow=${TFMAJOR}.${TFMINOR}.${TFPATCH}
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
