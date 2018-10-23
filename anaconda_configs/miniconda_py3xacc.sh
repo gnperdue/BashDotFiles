@@ -10,11 +10,10 @@ echo `date`
 PYMAJOR=3
 PYMINOR=6
 TFMAJOR=1
-TFMINOR=10
+TFMINOR=11
 TFPATCH=0
 CONDAENVNAME="py${PYMAJOR}xacc"
 PYVER="${PYMAJOR}.${PYMINOR}"
-export TF_PYTHON_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-${TFMAJOR}.${TFMINOR}.${TFPATCH}-py${PYMAJOR}-none-any.whl
 CONDAINSTALL=""
 MINIDIR=""
 
@@ -42,15 +41,15 @@ pip install 'python-language-server[all]'
 
 conda install -q -y -c conda-forge xgboost
 conda install -q -y -c rigetti pyquil
+conda install -q -y tensorflow=${TFMAJOR}.${TFMINOR}.${TFPATCH}
 conda install -q -y scikit-image
 conda install -q -y scikit-learn
 conda install -q -y ipython
 conda install -q -y jupyter
 conda install -q -y sympy
+conda install -q -y cython
 
-pip install --no-cache-dir --ignore-installed --upgrade $TF_PYTHON_URL
-pip install --no-cache-dir h5py
-
+pip install --no-cache-dir dwave-ocean-sdk
 pip install --no-cache-dir cirq
 
 python -m pip install --user xacc
@@ -58,7 +57,6 @@ python -m pip install --user xacc-rigetti
 python -m pip install --user xacc-dwave
 python -m pip install --user xacc-vqe
 python -m pip install --user tnqvm
-
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
