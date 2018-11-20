@@ -7,6 +7,7 @@
 # env for TB).
 
 # also, go to dwave pack and `python install.py`
+# also, use `easy_install` on `orang` egg (available elsewhere)
 
 ARCH=`uname`
 echo `date`
