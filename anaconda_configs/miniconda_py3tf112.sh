@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# TensorFlow 1.11 **ONLY**
+# TensorFlow 1.12 **ONLY**
 # (h5py comes with TF now)
 
 ARCH=`uname`
@@ -9,7 +9,7 @@ echo `date`
 PYMAJOR=3
 PYMINOR=6
 TFMAJOR=1
-TFMINOR=11
+TFMINOR=12
 TFPATCH=0
 CONDAENVNAME="py${PYMAJOR}tf${TFMAJOR}${TFMINOR}"
 PYVER="${PYMAJOR}.${PYMINOR}"
