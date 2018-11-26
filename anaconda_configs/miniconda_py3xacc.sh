@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# "py3xacc" - for Python 3 with xacc, pyquil, cirq, TF, ML (no PyTorch).
-# Note, this env has issues with TensorBoard (should use a bare TF only
-# env for TB).
+# "py3xacc" - for Python 3 with xacc, pyquil, cirq, qiskit, TF, other ML
+# (no PyTorch). Note, this env has issues with TensorBoard (should use a bare
+# TF only env for TB).
 
 ARCH=`uname`
 echo `date`
@@ -37,6 +37,7 @@ conda remove --yes --name $CONDAENVNAME --all
 conda create -q -y -n $CONDAENVNAME python=$PYVER
 . activate $CONDAENVNAME
 
+pip install --upgrade pip
 pip install 'python-language-server[all]'
 
 conda install -q -y -c conda-forge xgboost
@@ -46,11 +47,13 @@ conda install -q -y scikit-image
 conda install -q -y scikit-learn
 conda install -q -y ipython
 conda install -q -y jupyter
+conda install -q -y ipywidgets
 conda install -q -y sympy
 conda install -q -y cython
 
 pip install --no-cache-dir dwave-ocean-sdk
 pip install --no-cache-dir cirq
+pip install --no-cache-dir qiskit qiskit-aqua qiskit-aqua-chemistry
 
 python -m pip install --user xacc
 python -m pip install --user xacc-rigetti
