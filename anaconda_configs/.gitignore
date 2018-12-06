@@ -1,2 +1,5 @@
 *.log
 .ropeproject
+sapi-c-client-3.0-osx.tar.gz
+sapi-python-client-3.0-osx/
+sapi-python-client-3.0-osx.tar.gz
