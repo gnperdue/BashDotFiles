@@ -45,11 +45,11 @@ setupminiconda2() {
 }
 alias mnvpda2="setupminiconda2 && . activate py2mnv_pda"  # TF plus light support (HDF5, etc.)
 alias mnvtrn2="setupminiconda2 && . activate py2mnv_trn"  # TF _only_
-# alias py2pyq="setupminiconda2 && . activate py2pyq"      # Rigetti QProg
+# alias py2pyq="setupminiconda2 && . activate py2pyq"     # Rigetti QProg
 # alias setuproot="source /Users/perdue/Software/build_root/bin/thisroot.sh" # py2tf14?
-alias py2a="setupminiconda2 && . activate py2a"  # TF, etc. for use with atom (pyls)
-alias py2b="setupminiconda2 && . activate py2b"  # "bare" Python 2 (lang server, ipython, jupyter)
-alias py2qubo="setupminiconda2 && . activate py2qubo"  # tf 1.11 and some dwave stuff
+alias py2a="setupminiconda2 && . activate py2a"          # TF, etc. for use with atom (pyls)
+alias py2b="setupminiconda2 && . activate py2b"          # "bare" Python 2 (lang server, ipython, jupyter)
+# alias py2qubo="setupminiconda2 && . activate py2qubo"  # tf 1.11 and some dwave stuff
 
 setupminiconda3() {
   # take anaconda out of the PATH...
@@ -60,20 +60,22 @@ setupminiconda3() {
   # add miniconda3 to PATH
   export PATH="/Users/perdue/miniconda3/bin:$PATH"
 }
-alias mnvpda3="setupminiconda3 && . activate py3mnv_pda"  # TF plus light support (HDF5, etc.)
-alias mnvtrn3="setupminiconda3 && . activate py3mnv_trn"  # TF _only_
-alias py3dl="setupminiconda3 && . activate py3dl"        # General deep learning
-alias py3projq="setupminiconda3 && . activate py3projq"  # ProjectQ
-alias py3ed="setupminiconda3 && . activate py3ed"        # Edward work
-alias py3opf="setupminiconda3 && . activate py3opf"      # OpenFermion
-alias py3trch="setupminiconda3 && . activate py3trch"    # PyTorch, Py 3.7
-alias py3fast="setupminiconda3 && . activate py3fast"    # PyTorch, fastai
-alias py3tf112="setupminiconda3 && . activate py3tf112"  # TensorFlow 1.12
-alias py3util="setupminiconda3 && . activate py3util"    # Some Py3 stuff (changes)
-alias py3pymc="setupminiconda3 && . activate py3pymc"    # PyMC3 stuff
-alias py3gym="setupminiconda3 && . activate py3gym"      # TF 1.8, OpenAI gym
-alias py3a="setupminiconda3 && . activate py3a"  # TF, etc. for use with atom (pyls)
-alias py3xacc="setupminiconda3 && . activate py3xacc"    # XACC, pyquil, cirq, TF
-alias py3mpnn="setupminiconda3 && . activate py3mpnn"    # stuff for MPNN with cheminformatics
-alias py3qubo="setupminiconda3 && . activate py3qubo"  # tf 1.11 and some dwave stuff
-
+alias mnvpda3="setupminiconda3 && . activate py3mnv_pda"   # TF plus light support (HDF5, etc.)
+alias mnvtrn3="setupminiconda3 && . activate py3mnv_trn"   # TF _only_
+alias py3dl="setupminiconda3 && . activate py3dl"          # General deep learning
+# alias py3projq="setupminiconda3 && . activate py3projq"    # ProjectQ
+# alias py3ed="setupminiconda3 && . activate py3ed"          # Edward work
+# alias py3opf="setupminiconda3 && . activate py3opf"        # OpenFermion
+alias py3trch="setupminiconda3 && . activate py3trch"      # PyTorch, Py 3.7
+alias py3fast="setupminiconda3 && . activate py3fast"      # PyTorch 1.0, fastai
+alias py3tf112="setupminiconda3 && . activate py3tf112"    # TensorFlow 1.12
+alias py3util="setupminiconda3 && . activate py3util"      # Some Py3 stuff (changes)
+alias py3pymc="setupminiconda3 && . activate py3pymc"      # PyMC3 stuff
+alias py3gym="setupminiconda3 && . activate py3gym"        # TF 1.8, OpenAI gym
+alias py3a="setupminiconda3 && . activate py3a"            # TF, etc. for use with atom (pyls)
+alias py3xacc="setupminiconda3 && . activate py3xacc"      # XACC, pyquil, cirq, TF
+alias py3mpnn="setupminiconda3 && . activate py3mpnn"      # stuff for MPNN with cheminformatics
+alias py3qubo="setupminiconda3 && . activate py3qubo"      # tf 1.11 and some dwave stuff
+alias py3qiskit="setupminiconda3 && . activate py3qiskit"  # torch and qiskit stuff
+alias py3cirq="setupminiconda3 && . activate py3cirq"      # TF 1.12 and qiskit stuff
+alias py3spin="setupminiconda3 && . activate py3spin"      # Open AI spinning up
