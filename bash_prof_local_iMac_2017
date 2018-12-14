@@ -79,3 +79,6 @@ alias py3fast="setupminiconda3 && . activate py3fast"    # PyTorch, fastai
 # alias py3ed="setupminiconda3 && . activate py3ed"
 alias py3qubo="setupminiconda3 && . activate py3qubo"  # tf 1.11 and some dwave stuff
 alias py3astro="setupminiconda3 && . activate py3astro"  # tf 1.12 and astropy
+alias py3qiskit="setupminiconda3 && . activate py3qiskit"  # torch and qiskit stuff
+alias py3cirq="setupminiconda3 && . activate py3cirq"      # TF 1.12 and qiskit stuff
+alias py3spin="setupminiconda3 && . activate py3spin"      # Open AI spinning up
