@@ -24,7 +24,7 @@ modules = [
     'skimage', 'sympy', 'tensorflow', 'pymc3', 'theano', 'h5py', 'xlrd',
     'yaml', 'nltk', 'deepdish', 'torch', 'tornado', 'gevent', 'horovod',
     'pycurl', 'pyqtgraph', 'xgboost', 'pyls', 'xacc', 'gym', 'fastai', 'cirq',
-    'qiskit', 'mpi4py', 'joblib', 'seaborn'
+    'qiskit', 'mpi4py', 'joblib', 'seaborn', 'coverage', 'mlflow'
 ]
 
 for mod in modules:
