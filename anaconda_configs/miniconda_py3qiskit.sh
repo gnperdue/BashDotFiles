@@ -54,6 +54,8 @@ conda install -q -y xlrd
 conda install -q -y cython
 conda install -q -y pyyaml
 conda install -q -y sympy
+conda install -q -y poppler     # for qiskit circuit drawer
+conda install -q -y ipywidgets  # for qiskit viz
 
 pip install qiskit qiskit-aqua qiskit-aqua-chemistry
 
