@@ -46,7 +46,7 @@ conda install -q -y tensorflow=${TFMAJOR}.${TFMINOR}.${TFPATCH}
 conda install -q -y -c conda-forge xgboost
 conda install -q -y scikit-image
 conda install -q -y scikit-learn
-conda install -q -y ipython=6.5.0
+conda install -q -y ipython
 conda install -q -y jupyter
 conda install -q -y pymysql
 conda install -q -y sqlalchemy
@@ -56,8 +56,16 @@ conda install -q -y xlrd
 conda install -q -y cython
 conda install -q -y pyyaml
 conda install -q -y sympy
+conda install -q -y tqdm
+conda install -q -y coverage # for test coverage analysis
 
 pip install --upgrade tensorflow-probability
+
+### just bare bones gym
+# pip install --no-cache-dir gym
+### if you have all the deps, see https://github.com/openai/gym
+pip install --no-cache-dir 'gym[atari,box2d,classic_control]'
+pip install --no-cache-dir mlflow
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
