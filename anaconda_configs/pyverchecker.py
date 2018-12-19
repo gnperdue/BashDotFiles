@@ -22,9 +22,9 @@ def test_module_version(module_name):
 modules = [
     'pandas', 'matplotlib', 'numpy', 'scipy', 'IPython', 'sklearn',
     'skimage', 'sympy', 'tensorflow', 'pymc3', 'theano', 'h5py', 'xlrd',
-    'yaml', 'nltk', 'deepdish', 'torch', 'tornado', 'gevent', 'horovod',
-    'pycurl', 'pyqtgraph', 'xgboost', 'pyls', 'xacc', 'gym', 'fastai', 'cirq',
-    'qiskit', 'mpi4py', 'joblib', 'seaborn', 'coverage', 'mlflow'
+    'yaml', 'nltk', 'torch', 'tornado', 'gevent', 'horovod', 'pycurl',
+    'pyqtgraph', 'xgboost', 'pyls', 'xacc', 'gym', 'fastai', 'cirq', 'qiskit',
+    'mpi4py', 'joblib', 'seaborn', 'coverage', 'mlflow', 'tensorboardX'
 ]
 
 for mod in modules:
