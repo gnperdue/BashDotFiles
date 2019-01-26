@@ -80,3 +80,4 @@ alias py3qiskit="setupminiconda3 && . activate py3qiskit"  # torch and qiskit st
 alias py3cirq="setupminiconda3 && . activate py3cirq"      # TF 1.12 and qiskit stuff
 alias py3spin="setupminiconda3 && . activate py3spin"      # Open AI spinning up
 alias py3tf2="setupminiconda3 && . activate py3tf2"        # TF 2.0 preview
+alias py3goat="setupminiconda3 && . activate py3goat"      # TDD book
