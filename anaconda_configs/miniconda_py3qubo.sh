@@ -8,7 +8,7 @@ echo `date`
 PYMAJOR=3
 PYMINOR=6
 TFMAJOR=1
-TFMINOR=11
+TFMINOR=12
 TFPATCH=0
 CONDAENVNAME="py${PYMAJOR}qubo"
 PYVER="${PYMAJOR}.${PYMINOR}"
@@ -42,6 +42,8 @@ conda install -q -y scikit-image
 conda install -q -y scikit-learn
 conda install -q -y ipython
 conda install -q -y jupyter
+conda install -q -y tqdm
+conda install -q -y coverage
 
 pip install dwave-system
 pip install dwave-system[drivers] --extra-index-url https://pypi.dwavesys.com/simple
