@@ -46,6 +46,7 @@ conda install -q -y ipython
 conda install -q -y jupyter
 conda install -q -y astropy
 conda install -q -y seaborn
+conda install -q -y colorcet
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
