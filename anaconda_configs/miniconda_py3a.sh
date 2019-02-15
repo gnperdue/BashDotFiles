@@ -66,6 +66,7 @@ pip install --upgrade tensorflow-probability
 ### if you have all the deps, see https://github.com/openai/gym
 pip install --no-cache-dir 'gym[atari,box2d,classic_control]'
 pip install --no-cache-dir mlflow
+pip install --no-cache-dir kaggle
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
