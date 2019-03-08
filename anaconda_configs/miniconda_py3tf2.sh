@@ -37,13 +37,14 @@ conda create -q -y -n $CONDAENVNAME python=$PYVER
 
 pip install --upgrade pip
 pip install --no-cache-dir 'python-language-server[all]'
-pip install --no-cache-dir tensorflow==2.0.0-alpha0
-pip install --no-cache-dir mlflow
 
 conda install -q -y ipython
 conda install -q -y jupyter
 conda install -q -y tqdm
 conda install -q -y coverage
+
+pip install --no-cache-dir tensorflow==2.0.0-alpha0
+pip install --no-cache-dir mlflow
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
