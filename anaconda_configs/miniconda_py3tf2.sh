@@ -36,9 +36,9 @@ conda create -q -y -n $CONDAENVNAME python=$PYVER
 . activate $CONDAENVNAME
 
 pip install --upgrade pip
-pip install 'python-language-server[all]'
+pip install --no-cache-dir 'python-language-server[all]'
+pip install --no-cache-dir tensorflow==2.0.0-alpha0
 pip install --no-cache-dir mlflow
-pip install --no-cache-dir tf-nightly-2.0-preview
 
 conda install -q -y ipython
 conda install -q -y jupyter
