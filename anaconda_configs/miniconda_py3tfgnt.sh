@@ -48,6 +48,9 @@ pip install --no-cache-dir tf-nightly-2.0-preview
 pip install --no-cache-dir tf-agents-nightly
 pip install --no-cache-dir tfp-nightly
 pip install --no-cache-dir mlflow
+pip install --no-cache-dir matplotlib
+pip install --no-cache-dir seaborn
+pip install --no-cache-dir scikit-image
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
