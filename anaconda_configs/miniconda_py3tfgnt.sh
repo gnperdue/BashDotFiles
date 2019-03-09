@@ -45,6 +45,7 @@ conda install -q -y coverage
 
 pip install --no-cache-dir tf-nightly-2.0-preview
 pip install --no-cache-dir tf-agents-nightly
+pip install --no-cache-dir tfp-nightly
 pip install --no-cache-dir mlflow
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
