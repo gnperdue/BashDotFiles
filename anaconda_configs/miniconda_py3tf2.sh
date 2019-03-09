@@ -45,6 +45,7 @@ conda install -q -y coverage
 
 pip install --no-cache-dir tensorflow==2.0.0-alpha0
 pip install --no-cache-dir mlflow
+pip install --no-cache-dir matplotlib
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
