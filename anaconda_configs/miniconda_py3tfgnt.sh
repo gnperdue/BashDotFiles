@@ -43,6 +43,7 @@ conda install -q -y jupyter
 conda install -q -y tqdm
 conda install -q -y coverage
 
+pip install --no-cache-dir 'gym[atari,box2d,classic_control]'
 pip install --no-cache-dir tf-nightly-2.0-preview
 pip install --no-cache-dir tf-agents-nightly
 pip install --no-cache-dir tfp-nightly
