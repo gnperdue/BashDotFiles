@@ -12,7 +12,7 @@ echo `date`
 PYMAJOR=3
 PYMINOR=6
 TFMAJOR=1
-TFMINOR=12
+TFMINOR=12  # 1.12 is most recent on Conda as of now (1.13.1 on pypi)
 TFPATCH=0
 CONDAENVNAME="py${PYMAJOR}a"
 PYVER="${PYMAJOR}.${PYMINOR}"
@@ -43,6 +43,7 @@ pip install --upgrade pip
 pip install 'python-language-server[all]'
 
 conda install -q -y tensorflow=${TFMAJOR}.${TFMINOR}.${TFPATCH}
+conda install -q -y -c conda-forge tensorflow-probability
 conda install -q -y -c conda-forge xgboost
 conda install -q -y scikit-image
 conda install -q -y scikit-learn
@@ -59,7 +60,7 @@ conda install -q -y sympy
 conda install -q -y tqdm
 conda install -q -y coverage # for test coverage analysis
 
-pip install --upgrade tensorflow-probability
+# pip install --upgrade tensorflow-probability
 
 ### just bare bones gym
 # pip install --no-cache-dir gym
