@@ -24,8 +24,8 @@ modules = [
     'IPython', 'joblib', 'matplotlib', 'mlflow', 'mpi4py', 'nltk', 'numpy',
     'pandas', 'pycurl', 'pyls', 'pymc3', 'pyqtgraph', 'qiskit', 'seaborn',
     'scipy', 'selenium', 'skimage', 'sklearn', 'sympy', 'tensorboardX',
-    'tensorflow', 'tf_agents', 'theano', 'torch', 'tornado', 'xgboost', 'xacc',
-    'xlrd', 'yaml',
+    'tensorflow', 'tf_agents', 'theano', 'torch', 'torchvision', 'tornado',
+    'xgboost', 'xacc', 'xlrd', 'yaml',
 ]
 
 for mod in modules:
