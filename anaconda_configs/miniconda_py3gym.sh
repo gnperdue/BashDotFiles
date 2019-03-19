@@ -13,7 +13,6 @@ TFMINOR=11
 TFPATCH=0
 CONDAENVNAME="py${PYMAJOR}gym"
 PYVER="${PYMAJOR}.${PYMINOR}"
-export TF_PYTHON_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-${TFMAJOR}.${TFMINOR}.${TFPATCH}-py${PYMAJOR}-none-any.whl
 CONDAINSTALL=""
 MINIDIR=""
 
@@ -40,6 +39,7 @@ conda create -q -y -n $CONDAENVNAME python=$PYVER
 pip install 'python-language-server[all]'
 
 conda install -q -y pytorch torchvision -c pytorch
+conda install -q -y tensorflow=${TFMAJOR}.${TFMINOR}.${TFPATCH}
 conda install -q -y scikit-image
 conda install -q -y scikit-learn
 conda install -q -y flake8
@@ -52,14 +52,24 @@ conda install -q -y pandas-datareader
 conda install -q -y pyqtgraph
 conda install -q -y xlrd
 conda install -q -y cython
+conda install -q -y tqdm     # for Fluent Python
+conda install -q -y coverage # for test coverage analysis
 
-pip install --no-cache-dir --ignore-installed --upgrade msgpack
-pip install --no-cache-dir --ignore-installed --upgrade $TF_PYTHON_URL
-pip install --no-cache-dir h5py
 ### just bare bones gym
 # pip install --no-cache-dir gym
 ### if you have all the deps, see https://github.com/openai/gym
-pip install --no-cache-dir 'gym[all]'
+# pip install --no-cache-dir 'gym[all]'
+pip install --no-cache-dir 'gym[atari,box2d,classic_control]'
+pip install --no-cache-dir mlflow
+
+DAT=`date +%s`
+mkdir -p ${HOME}/Software/${DAT}
+pushd ${HOME}/Software/${DAT} >& /dev/null
+git clone https://github.com/gnperdue/gym-oscillator.git
+pushd gym-oscillator >& /dev/null
+pip install -e .
+popd >& /dev/null
+popd >& /dev/null
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
