@@ -63,8 +63,8 @@ pip install --no-cache-dir 'gym[atari,box2d,classic_control]'
 pip install --no-cache-dir mlflow
 
 DAT=`date +%s`
-mkdir -p ${HOME}/Software/${DAT}
-pushd ${HOME}/Software/${DAT} >& /dev/null
+mkdir -p ${HOME}/Software/${CONDAENVNAME}/${DAT}
+pushd ${HOME}/Software/${CONDAENVNAME}/${DAT} >& /dev/null
 git clone https://github.com/gnperdue/gym-oscillator.git
 pushd gym-oscillator >& /dev/null
 pip install -e .
