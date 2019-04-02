@@ -60,6 +60,15 @@ pip install --no-cache-dir mlflow
 pip install --no-cache-dir tensorboardX
 pip install --no-cache-dir kaggle
 
+DAT=`date +%s`
+mkdir -p ${HOME}/Software/${CONDAENVNAME}/${DAT}
+pushd ${HOME}/Software/${CONDAENVNAME}/${DAT} >& /dev/null
+git clone https://github.com/gnperdue/gym-oscillator.git
+pushd gym-oscillator >& /dev/null
+pip install -e .
+popd >& /dev/null
+popd >& /dev/null
+
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
 echo "Activate the $CONDAENVNAME environment with"
