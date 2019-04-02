@@ -42,7 +42,7 @@ conda install -q -y coverage
 #conda install -q -y nbconvert==5.4.1  # may be needed for tornado issue
 
 pip install --no-cache-dir 'gym[atari,box2d,classic_control]'
-# pip install --upgrade --no-cache-dir tf-nightly
+pip install --upgrade --no-cache-dir tf-nightly
 pip install --upgrade --no-cache-dir tf-agents-nightly
 pip install --upgrade --no-cache-dir tfp-nightly
 pip install --no-cache-dir mlflow
