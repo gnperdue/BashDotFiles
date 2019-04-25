@@ -1,0 +1,23 @@
+Fix for
+
+```
+Possible problem with module: X, Python is not installed as a framework. The
+Mac OS X backend will not be able to function correctly if Python is not
+installed as a framework. See the Python documentation for more information on
+installing Python as a framework on Mac OS X. Please either reinstall Python as
+a framework, or try one of the other backends. If you are using (Ana)Conda
+please install python.app and replace the use of 'python' with 'pythonw'. See
+'Working with Matplotlib on OSX' in the Matplotlib FAQ for more information.
+```
+
+Update `~/.matplotlib/matplotlibrc`:
+
+```
+~$ ls .matplotlib/
+fontList.cache       fontList.json        fontList.py3k.cache  fontlist-v300.json   tex.cache/
+~$ cd .matplotlib/
+.matplotlib$ echo "backend: TkAgg" >> matplotlibrc
+.matplotlib$ more matplotlibrc
+backend: TkAgg
+.matplotlib$
+```
