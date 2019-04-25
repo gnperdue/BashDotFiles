@@ -59,8 +59,9 @@ conda install -q -y cython
 conda install -q -y pyyaml
 conda install -q -y sympy
 
-pip install --upgrade cirq~=0.4.0.dev
-pip install openfermion openfermioncirq
+pip install --upgrade cirq==0.5.0
+# these will downgrade to cirq 0.4.0
+# pip install openfermion openfermioncirq
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
