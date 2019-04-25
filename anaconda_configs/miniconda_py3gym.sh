@@ -36,10 +36,11 @@ conda remove --yes --name $CONDAENVNAME --all
 conda create -q -y -n $CONDAENVNAME python=$PYVER
 . activate $CONDAENVNAME
 
+pip install --upgrade pip
 pip install 'python-language-server[all]'
 
 conda install -q -y pytorch torchvision -c pytorch
-conda install -q -y tensorflow=${TFMAJOR}.${TFMINOR}.${TFPATCH}
+# conda install -q -y tensorflow=${TFMAJOR}.${TFMINOR}.${TFPATCH}
 conda install -q -y scikit-image
 conda install -q -y scikit-learn
 conda install -q -y flake8
@@ -67,6 +68,10 @@ mkdir -p ${HOME}/Software/${CONDAENVNAME}/${DAT}
 pushd ${HOME}/Software/${CONDAENVNAME}/${DAT} >& /dev/null
 git clone https://github.com/gnperdue/gym-oscillator.git
 pushd gym-oscillator >& /dev/null
+pip install -e .
+popd >& /dev/null
+git clone https://github.com/gnperdue/gym-bandits.git
+pushd gym-bandits >& /dev/null
 pip install -e .
 popd >& /dev/null
 popd >& /dev/null
