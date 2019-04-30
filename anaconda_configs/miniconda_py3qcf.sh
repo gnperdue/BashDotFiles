@@ -2,13 +2,13 @@
 
 # "py3qcf" - for Andy Li's quantum computing framework.
 
-# Also python-language-server (for atom), other valued packages.
+# Also python-language-server (for atom), and a few other valued packages.
 
 ARCH=`uname`
 echo `date`
 
 PYMAJOR=3
-PYMINOR=6
+PYMINOR=7
 CONDAENVNAME="py${PYMAJOR}qcf"
 PYVER="${PYMAJOR}.${PYMINOR}"
 CONDAINSTALL=""
@@ -35,26 +35,17 @@ conda create -q -y -n $CONDAENVNAME python=$PYVER
 . activate $CONDAENVNAME
 
 pip install --upgrade pip
+pip install --upgrade setuptools
 pip install 'python-language-server[all]'
 
-conda install -q -y scikit-image
-conda install -q -y scikit-learn
 conda install -q -y ipython
 conda install -q -y jupyter
-conda install -q -y pymysql
-conda install -q -y sqlalchemy
-conda install -q -y pandas-datareader
-conda install -q -y pyqtgraph
-conda install -q -y xlrd
-conda install -q -y cython
-conda install -q -y pyyaml
-conda install -q -y sympy
 conda install -q -y poppler     # for qiskit circuit drawer
 conda install -q -y ipywidgets  # for qiskit viz
 
-pip install --no-cache-dir qiskit qiskit-terra qiskit-aqua qiskit-aqua-chemistry
-pip install --no-cache-dir openfermion cirq openfermioncirq
-pip install --no-cache-dir pyquil
+CFLAGS=-stdlib=libc++ pip install --no-cache-dir qiskit==0.8.0
+pip install --no-cache-dir cirq==0.4.0
+pip install --no-cache-dir pyquil==2.5.2
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
@@ -62,5 +53,7 @@ echo "Activate the $CONDAENVNAME environment with"
 echo "\$ source activate $CONDAENVNAME"
 echo "and deactivate with"
 echo "\$ source deactivate"
+echo "  (or possibly, for newer versions of Anaconda)"
+echo "\$ conda deactivate"
 
 echo -e "\a"
