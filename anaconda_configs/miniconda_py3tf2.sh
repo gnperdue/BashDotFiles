@@ -36,6 +36,7 @@ conda create -q -y -n $CONDAENVNAME python=$PYVER
 . activate $CONDAENVNAME
 
 pip install --upgrade pip
+pip install --upgrade setuptools
 pip install --no-cache-dir 'python-language-server[all]'
 
 conda install -q -y ipython
@@ -54,5 +55,7 @@ echo "Activate the $CONDAENVNAME environment with"
 echo "\$ source activate $CONDAENVNAME"
 echo "and deactivate with"
 echo "\$ source deactivate"
+echo "  (or possibly, for newer versions of Anaconda)"
+echo "\$ conda deactivate"
 
 echo -e "\a"
