@@ -1,10 +1,7 @@
 #!/bin/bash
 
 # "py3a" - for Python 3 with atom.
-
-# TF 1.11, python-language-server (for atom), other valued packages.
-# Note, this env has issues with TensorBoard (should use a bare TF only
-# env for TB).
+# TF 1.13.1, python-language-server (for atom), other valued packages.
 
 ARCH=`uname`
 echo `date`
@@ -12,8 +9,8 @@ echo `date`
 PYMAJOR=3
 PYMINOR=6
 TFMAJOR=1
-TFMINOR=12  # 1.12 is most recent on Conda as of now (1.13.1 on pypi)
-TFPATCH=0
+TFMINOR=13  # most recent on Conda as of 2019/may/12
+TFPATCH=1
 CONDAENVNAME="py${PYMAJOR}a"
 PYVER="${PYMAJOR}.${PYMINOR}"
 CONDAINSTALL=""
@@ -76,5 +73,7 @@ echo "Activate the $CONDAENVNAME environment with"
 echo "\$ source activate $CONDAENVNAME"
 echo "and deactivate with"
 echo "\$ source deactivate"
+echo "  (or possibly, for newer versions of Anaconda)"
+echo "\$ conda deactivate"
 
 echo -e "\a"
