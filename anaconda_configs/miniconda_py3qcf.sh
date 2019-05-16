@@ -8,7 +8,7 @@ ARCH=`uname`
 echo `date`
 
 PYMAJOR=3
-PYMINOR=7
+PYMINOR=6
 CONDAENVNAME="py${PYMAJOR}qcf"
 PYVER="${PYMAJOR}.${PYMINOR}"
 CONDAINSTALL=""
@@ -43,7 +43,8 @@ conda install -q -y jupyter
 conda install -q -y poppler     # for qiskit circuit drawer
 conda install -q -y ipywidgets  # for qiskit viz
 
-CFLAGS=-stdlib=libc++ pip install --no-cache-dir qiskit==0.8.0
+#CFLAGS=-stdlib=libc++ pip install --no-cache-dir qiskit==0.8.1
+pip install --no-cache-dir qiskit qiskit-aqua qiskit-chemistry
 pip install --no-cache-dir cirq==0.4.0
 pip install --no-cache-dir pyquil==2.5.2
 
