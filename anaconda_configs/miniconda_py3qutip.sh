@@ -35,8 +35,18 @@ pip install --upgrade setuptools
 pip install  --no-cache-dir 'python-language-server[all]'
 
 conda install -q -y -c conda-forge qutip
-conda install -q -y ipython jupyter notebook nose tqdm coverage multiprocess
-conda install -q -y mkl numpy scipy cython matplotlib
+conda install -q -y ipython
+conda install -q -y jupyter
+conda install -q -y notebook
+conda install -q -y nose
+conda install -q -y tqdm
+conda install -q -y coverage
+conda install -q -y multiprocess
+conda install -q -y mkl
+conda install -q -y numpy
+conda install -q -y scipy
+conda install -q -y cython
+conda install -q -y matplotlib
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
