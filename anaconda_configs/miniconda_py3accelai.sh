@@ -57,6 +57,7 @@ conda install -q -y cython
 conda install -q -y pyyaml
 conda install -q -y sympy
 conda install -q -y tqdm
+conda install -q -y beautifulsoup4
 conda install -q -y coverage # for test coverage analysis
 
 # pip install --upgrade tensorflow-probability
