@@ -55,6 +55,7 @@ pip install --no-cache-dir guildai
 # pip install --no-cache-dir gym
 ### if you have all the deps, see https://github.com/openai/gym
 pip install --no-cache-dir 'gym[atari,box2d,classic_control]'
+pip install --no-cache-dir kaggle
 
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
@@ -63,5 +64,7 @@ echo "Activate the $CONDAENVNAME environment with"
 echo "\$ source activate $CONDAENVNAME"
 echo "and deactivate with"
 echo "\$ source deactivate"
+echo "  (or possibly, for newer versions of Anaconda)"
+echo "\$ conda deactivate"
 
 echo -e "\a"
