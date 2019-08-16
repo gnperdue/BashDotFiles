@@ -58,6 +58,7 @@ conda install -q -y xlrd
 conda install -q -y cython
 conda install -q -y pyyaml
 conda install -q -y sympy
+conda install -q -y tqdm
 
 pip install openfermion cirq openfermioncirq
 
