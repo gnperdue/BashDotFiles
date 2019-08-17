@@ -5,7 +5,7 @@ export PATH=$PATH:~/PersonalScripts:~/Dropbox/UnixSettings/LocalScripts
 # Needed for Tiger
 # alias ssh="ssh -Y"
 
-# move /usr/loca/bin up front for brew
+# move /usr/local/bin up front for brew
 export PATH=/usr/local/bin:$PATH
 
 # get locally installed binaries of interest - put it at the back for now
@@ -13,6 +13,9 @@ export PATH=$PATH:/Users/perdue/Software/bin
 
 # Other tools and scripts
 # export PATH=$HOME/bin:$PATH
+
+# ruby stuff for jekyll
+export PATH=$PATH:/Users/perdue/.gem/ruby/2.5.0/bin
 
 # bash completion
 # v1.3
