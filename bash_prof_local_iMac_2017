@@ -37,6 +37,9 @@ for ii in $(seq 1 7); do
 done
 }
 
+# js shell
+export PATH=$PATH:/Users/perdue/Software/jsshell-mac/
+
 setupminiconda2() {
   # take anaconda out of the PATH...
   export PATH="${PATH/\/Users\/perdue\/anaconda\/bin:/}"
