@@ -28,6 +28,9 @@ export PATH=$PATH:/Users/perdue/.gem/ruby/2.5.0/bin
 PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
 export PATH
 
+# js shell - spidermonkey
+export PATH=$PATH:/Users/perdue/Software/jsshell/
+
 # Wicked Cool...
 # export PATH=$PATH:${HOME}/Dropbox/UnixSettings/WickedCoolScripts
 
