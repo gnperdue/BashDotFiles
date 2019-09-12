@@ -8,7 +8,7 @@ ARCH=`uname`
 echo `date`
 
 PYMAJOR=3
-PYMINOR=6
+PYMINOR=7
 CONDAENVNAME="py${PYMAJOR}qcf"
 PYVER="${PYMAJOR}.${PYMINOR}"
 CONDAINSTALL=""
@@ -59,5 +59,7 @@ echo "and deactivate with"
 echo "\$ source deactivate"
 echo "  (or possibly, for newer versions of Anaconda)"
 echo "\$ conda deactivate"
+
+python pyverchecker.py
 
 echo -e "\a"
