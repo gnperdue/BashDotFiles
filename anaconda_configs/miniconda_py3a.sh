@@ -77,4 +77,6 @@ echo "\$ source deactivate"
 echo "  (or possibly, for newer versions of Anaconda)"
 echo "\$ conda deactivate"
 
+python pyverchecker.py
+
 echo -e "\a"
