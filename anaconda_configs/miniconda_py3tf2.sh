@@ -6,10 +6,10 @@ ARCH=`uname`
 echo `date`
 
 PYMAJOR=3
-PYMINOR=6
-TFMAJOR=2
-TFMINOR=0
-TFPATCH=0
+PYMINOR=7
+# TFMAJOR=2
+# TFMINOR=0
+# TFPATCH=0
 CONDAENVNAME="py${PYMAJOR}tf${TFMAJOR}"
 PYVER="${PYMAJOR}.${PYMINOR}"
 CONDAINSTALL=""
@@ -44,8 +44,8 @@ conda install -q -y jupyter
 conda install -q -y tqdm
 conda install -q -y coverage
 
-pip install --no-cache-dir tensorflow==2.0.0-beta1 matplotlib seaborn imageio \
-    scikit-image scikit-learn
+pip install --no-cache-dir tensorflow==2.0.0-rc1 matplotlib seaborn imageio \
+    scikit-image scikit-learn tf-agents-nightly tfp-nightly
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
@@ -55,5 +55,7 @@ echo "and deactivate with"
 echo "\$ source deactivate"
 echo "  (or possibly, for newer versions of Anaconda)"
 echo "\$ conda deactivate"
+
+python pyverchecker.py
 
 echo -e "\a"
