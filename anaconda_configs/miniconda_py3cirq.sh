@@ -10,9 +10,9 @@ ARCH=`uname`
 echo `date`
 
 PYMAJOR=3
-PYMINOR=6
+PYMINOR=7
 TFMAJOR=1
-TFMINOR=12
+TFMINOR=14
 TFPATCH=0
 CONDAENVNAME="py${PYMAJOR}cirq"
 PYVER="${PYMAJOR}.${PYMINOR}"
@@ -59,6 +59,7 @@ conda install -q -y cython
 conda install -q -y pyyaml
 conda install -q -y sympy
 conda install -q -y tqdm
+conda install -q -y pytest
 
 pip install openfermion cirq openfermioncirq
 
@@ -68,5 +69,7 @@ echo "Activate the $CONDAENVNAME environment with"
 echo "\$ source activate $CONDAENVNAME"
 echo "and deactivate with"
 echo "\$ source deactivate"
+
+python pyverchecker.py
 
 echo -e "\a"
