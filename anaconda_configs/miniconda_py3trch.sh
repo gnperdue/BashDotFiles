@@ -56,7 +56,7 @@ conda install -q -y coverage # for test coverage analysis
 # pip install --no-cache-dir gym
 ### if you have all the deps, see https://github.com/openai/gym
 pip install --no-cache-dir 'gym[atari,box2d,classic_control]'
-pip install --no-cache-dir mlflow
+# pip install --no-cache-dir mlflow
 pip install --no-cache-dir tensorboardX
 pip install --no-cache-dir kaggle
 
@@ -75,5 +75,9 @@ echo "Activate the $CONDAENVNAME environment with"
 echo "\$ source activate $CONDAENVNAME"
 echo "and deactivate with"
 echo "\$ source deactivate"
+echo "  (or possibly, for newer versions of Anaconda)"
+echo "\$ conda deactivate"
+
+python pyverchecker.py
 
 echo -e "\a"
