@@ -10,10 +10,10 @@ ARCH=`uname`
 echo `date`
 
 PYMAJOR=3
-PYMINOR=6
+PYMINOR=7
 TFMAJOR=1
-TFMINOR=13
-TFPATCH=1
+TFMINOR=14
+TFPATCH=0
 CONDAENVNAME="py${PYMAJOR}cirq_dev"
 PYVER="${PYMAJOR}.${PYMINOR}"
 CONDAINSTALL=""
@@ -59,9 +59,10 @@ conda install -q -y cython
 conda install -q -y pyyaml
 conda install -q -y sympy
 conda install -q -y tqdm
+conda install -q -y pytest
 
-pip install --upgrade cirq==0.5.0
-# these will downgrade to cirq 0.4.0
+pip install --upgrade cirq==0.6.0.dev20190812145344
+# these will probably downgrade to cirq
 # pip install openfermion openfermioncirq
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
@@ -70,5 +71,7 @@ echo "Activate the $CONDAENVNAME environment with"
 echo "\$ source activate $CONDAENVNAME"
 echo "and deactivate with"
 echo "\$ source deactivate"
+
+python pyverchecker.py
 
 echo -e "\a"
