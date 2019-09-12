@@ -7,7 +7,7 @@ ARCH=`uname`
 echo `date`
 
 CONDAENVNAME="py3fast"
-PYVER=3.6
+PYVER=3.7
 CONDAINSTALL=""
 MINIDIR=""
 
@@ -66,5 +66,7 @@ echo "and deactivate with"
 echo "\$ source deactivate"
 echo "  (or possibly, for newer versions of Anaconda)"
 echo "\$ conda deactivate"
+
+python pyverchecker.py
 
 echo -e "\a"
