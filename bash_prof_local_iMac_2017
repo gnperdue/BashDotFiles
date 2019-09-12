@@ -40,20 +40,20 @@ done
 # js shell
 export PATH=$PATH:/Users/perdue/Software/jsshell-mac/
 
-setupminiconda2() {
-  # take anaconda out of the PATH...
-  export PATH="${PATH/\/Users\/perdue\/anaconda\/bin:/}"
-  # take miniconda3,2 out of the PATH...
-  export PATH="${PATH/\/Users\/perdue\/miniconda3\/bin:/}"
-  export PATH="${PATH/\/Users\/perdue\/miniconda2\/bin:/}"
-  # add miniconda2 to PATH
-  export PATH="/Users/perdue/miniconda2/bin:$PATH"
-}
-alias mnvpda2="setupminiconda2 && . activate py2mnv_pda"
-alias mnvtrn2="setupminiconda2 && . activate py2mnv_trn"
-alias py2a="setupminiconda2 && . activate py2a"  # TF, etc. for use with atom (pyls)
-alias py2b="setupminiconda2 && . activate py2b"  # "bare" Python 2 (lang server, ipython, jupyter)
-alias py2dwv="setupminiconda2 && . activate py2dwv"  # D-wave Ocean SDK
+#setupminiconda2() {
+#  # take anaconda out of the PATH...
+#  export PATH="${PATH/\/Users\/perdue\/anaconda\/bin:/}"
+#  # take miniconda3,2 out of the PATH...
+#  export PATH="${PATH/\/Users\/perdue\/miniconda3\/bin:/}"
+#  export PATH="${PATH/\/Users\/perdue\/miniconda2\/bin:/}"
+#  # add miniconda2 to PATH
+#  export PATH="/Users/perdue/miniconda2/bin:$PATH"
+#}
+#alias mnvpda2="setupminiconda2 && . activate py2mnv_pda"
+#alias mnvtrn2="setupminiconda2 && . activate py2mnv_trn"
+#alias py2a="setupminiconda2 && . activate py2a"  # TF, etc. for use with atom (pyls)
+#alias py2b="setupminiconda2 && . activate py2b"  # "bare" Python 2 (lang server, ipython, jupyter)
+#alias py2dwv="setupminiconda2 && . activate py2dwv"  # D-wave Ocean SDK
 # alias py2pyq="setupminiconda2 && . activate py2pyq"      # Rigetti QProg
 # alias py2horo="setupminiconda2 && . activate py2horo"    # TensorFlow 1.4 + Uber Horovod
 # alias setuproot="source /Users/perdue/Software/root-v6-10-08/build_root/bin/thisroot.sh" # py2tf14?
