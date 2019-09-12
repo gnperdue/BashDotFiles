@@ -32,6 +32,7 @@ conda create -q -y -n $CONDAENVNAME python=$PYVER
 . activate $CONDAENVNAME
 
 pip install 'python-language-server[all]'
+pip install typing_extensions   # Py 3.7 feature
 
 conda install -q -y -c pytorch -c fastai fastai
 conda install -q -y -c conda-forge xgboost
@@ -55,6 +56,7 @@ pip install --no-cache-dir guildai
 # pip install --no-cache-dir gym
 ### if you have all the deps, see https://github.com/openai/gym
 pip install --no-cache-dir 'gym[atari,box2d,classic_control]'
+pip install --no-cache-dir tensorboardX
 pip install --no-cache-dir kaggle
 
 
