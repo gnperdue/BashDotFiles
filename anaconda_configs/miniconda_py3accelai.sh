@@ -6,10 +6,10 @@ ARCH=`uname`
 echo `date`
 
 PYMAJOR=3
-PYMINOR=6
+PYMINOR=7
 TFMAJOR=1
-TFMINOR=13  # most recent on Conda as of 2019/june/20
-TFPATCH=1
+TFMINOR=14  # most recent on Conda as of 2019/june/20
+TFPATCH=0
 CONDAENVNAME="py${PYMAJOR}accelai"
 PYVER="${PYMAJOR}.${PYMINOR}"
 CONDAINSTALL=""
@@ -88,5 +88,7 @@ echo "and deactivate with"
 echo "\$ source deactivate"
 echo "  (or possibly, for newer versions of Anaconda)"
 echo "\$ conda deactivate"
+
+python pyverchecker.py
 
 echo -e "\a"
