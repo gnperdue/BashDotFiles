@@ -1,16 +1,16 @@
 #!/bin/bash
 
 # "py3a" - for Python 3 with atom.
-# TF 1.13.1, python-language-server (for atom), other valued packages.
+# TF 1.14.0, python-language-server (for atom), other valued packages.
 
 ARCH=`uname`
 echo `date`
 
 PYMAJOR=3
-PYMINOR=6
+PYMINOR=7
 TFMAJOR=1
-TFMINOR=13  # most recent on Conda as of 2019/may/12
-TFPATCH=1
+TFMINOR=14  # most recent on Conda as of 2019/sept/12
+TFPATCH=0
 CONDAENVNAME="py${PYMAJOR}a"
 PYVER="${PYMAJOR}.${PYMINOR}"
 CONDAINSTALL=""
@@ -64,7 +64,7 @@ conda install -q -y coverage # for test coverage analysis
 # pip install --no-cache-dir gym
 ### if you have all the deps, see https://github.com/openai/gym
 pip install --no-cache-dir 'gym[atari,box2d,classic_control]'
-pip install --no-cache-dir mlflow
+# pip install --no-cache-dir mlflow
 pip install --no-cache-dir guildai
 pip install --no-cache-dir kaggle
 
