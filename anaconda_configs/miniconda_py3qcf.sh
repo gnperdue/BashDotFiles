@@ -47,7 +47,7 @@ conda install -q -y ipywidgets  # for qiskit viz
 # CFLAGS=-stdlib=libc++ pip install --no-cache-dir qiskit==0.10.5
 # pip install --no-cache-dir qiskit qiskit-aqua qiskit-chemistry
 # pip install --upgrade --no-cache-dir qiskit==0.10.5
-pip install --upgrade --no-cache-dir qiskit
+pip install --upgrade --no-cache-dir qiskit==0.11.1
 pip install --no-cache-dir cirq==0.5.0
 pip install --no-cache-dir pyquil==2.6.0
 
