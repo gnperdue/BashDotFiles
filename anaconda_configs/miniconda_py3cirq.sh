@@ -63,6 +63,11 @@ conda install -q -y pytest
 
 pip install openfermion cirq openfermioncirq
 
+# pip install --upgrade cirq==0.6.0.dev20190812145344
+# these will probably downgrade to cirq
+# pip install openfermion openfermioncirq
+
+
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
 echo "Activate the $CONDAENVNAME environment with"
