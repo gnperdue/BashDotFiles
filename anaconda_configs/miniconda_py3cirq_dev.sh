@@ -43,7 +43,7 @@ pushd Cirq >& /dev/null
 python -m pip install -r requirements.txt
 python -m pip install -r dev_tools/conf/pip-list-dev-tools.txt
 python -m pip install -r cirq/contrib/contrib-requirements.txt
-#?# pip install -e .
+python -m pip install -e .
 popd >& /dev/null
 popd >& /dev/null
 
