@@ -2,18 +2,11 @@
 
 # "py3cirq_dev" - for Python 3 with Cirq, cutting edge(ish) versions.
 
-# TF 1.13.1, python-language-server (for atom), other valued packages.
-# Note, this env has issues with TensorBoard (should use a bare TF only
-# env for TB).
-
 ARCH=`uname`
 echo `date`
 
 PYMAJOR=3
 PYMINOR=7
-TFMAJOR=1
-TFMINOR=14
-TFPATCH=0
 CONDAENVNAME="py${PYMAJOR}cirq_dev"
 PYVER="${PYMAJOR}.${PYMINOR}"
 CONDAINSTALL=""
@@ -42,28 +35,17 @@ conda create -q -y -n $CONDAENVNAME python=$PYVER
 pip install --upgrade pip
 pip install 'python-language-server[all]'
 
-conda install -q -y tensorflow=${TFMAJOR}.${TFMINOR}.${TFPATCH}
-conda install -q -y -c conda-forge tensorflow-probability
-conda install -q -y -c conda-forge xgboost
-conda install -q -y scikit-image
-conda install -q -y scikit-learn
-conda install -q -y seaborn
-conda install -q -y ipython
-conda install -q -y jupyter
-conda install -q -y pymysql
-conda install -q -y sqlalchemy
-conda install -q -y pandas-datareader
-conda install -q -y pyqtgraph
-conda install -q -y xlrd
-conda install -q -y cython
-conda install -q -y pyyaml
-conda install -q -y sympy
-conda install -q -y tqdm
-conda install -q -y pytest
-
-pip install --upgrade cirq==0.6.0.dev20190812145344
-# these will probably downgrade to cirq
-# pip install openfermion openfermioncirq
+DAT=`date +%s`
+mkdir -p ${HOME}/Software/${CONDAENVNAME}/${DAT}
+pushd ${HOME}/Software/${CONDAENVNAME}/${DAT} >& /dev/null
+git clone https://github.com/quantumlib/Cirq.git
+pushd Cirq >& /dev/null
+python -m pip install -r requirements.txt
+python -m pip install -r dev_tools/conf/pip-list-dev-tools.txt
+python -m pip install -r cirq/contrib/contrib-requirements.txt
+#?# pip install -e .
+popd >& /dev/null
+popd >& /dev/null
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
