@@ -45,11 +45,9 @@ conda install -q -y sqlalchemy
 conda install -q -y pandas-datareader
 conda install -q -y h5py
 conda install -q -y ujson
-conda install -q -y tornado
-conda install -q -y gevent
 conda install -q -y pycurl
 conda install -q -y tqdm
-conda install -q -y aiohttp  # for High Performance Python examples
+conda install -q -y coverage
 
 pip install --no-cache-dir guildai
 ### just bare bones gym
