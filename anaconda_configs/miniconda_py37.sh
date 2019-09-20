@@ -6,7 +6,7 @@ ARCH=`uname`
 echo `date`
 
 PYMAJOR=3
-PYMINOR=6
+PYMINOR=7
 CONDAENVNAME="py${PYMAJOR}${PYMINOR}"
 PYVER="${PYMAJOR}.${PYMINOR}"
 CONDAINSTALL=""
@@ -34,6 +34,7 @@ conda create -q -y -n $CONDAENVNAME python=$PYVER
 
 pip install --upgrade pip
 pip install --upgrade setuptools
+pip install --no-cache-dir typing_extensions   # Py 3.7 feature
 pip install  --no-cache-dir 'python-language-server[all]'
 pip install  --no-cache-dir jupyter
 pip install  --no-cache-dir ipython
