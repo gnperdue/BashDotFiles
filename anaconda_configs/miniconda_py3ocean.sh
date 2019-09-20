@@ -1,15 +1,15 @@
 #!/bin/bash
 
-# TensorFlow 1.13.1 (most recent conda as of 2019/7/11) plus some dwave stuff
+# TensorFlow 1.14.0 (most recent conda as of 2019/Sept) plus some dwave stuff
 
 ARCH=`uname`
 echo `date`
 
 PYMAJOR=3
-PYMINOR=6
+PYMINOR=7
 TFMAJOR=1
-TFMINOR=13
-TFPATCH=1
+TFMINOR=14
+TFPATCH=0
 CONDAENVNAME="py${PYMAJOR}ocean"
 PYVER="${PYMAJOR}.${PYMINOR}"
 CONDAINSTALL=""
@@ -56,5 +56,9 @@ echo "Activate the $CONDAENVNAME environment with"
 echo "\$ source activate $CONDAENVNAME"
 echo "and deactivate with"
 echo "\$ source deactivate"
+echo "  (or possibly, for newer versions of Anaconda)"
+echo "\$ conda deactivate"
+
+python pyverchecker.py
 
 echo -e "\a"
