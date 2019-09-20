@@ -69,7 +69,6 @@ alias py3ocean="setupminiconda3 && . activate py3ocean"        # tf 1.13.1 and n
 alias py3pymc="setupminiconda3 && . activate py3pymc"          # PyMC3 stuff
 alias py3qiskit="setupminiconda3 && . activate py3qiskit"      # torch and qiskit stuff
 alias py3qsharp="setupminiconda3 && . activate py3qsharp"      # qsharp stuff
-alias py3qubo="setupminiconda3 && . activate py3qubo"          # tf 1.11 and some dwave stuff
 alias py3qutip="setupminiconda3 && . activate py3qutip"        # qutip stuff
 alias py3spin="setupminiconda3 && . activate py3spin"          # Open AI spinning up
 alias py3tf2="setupminiconda3 && . activate py3tf2"            # TF 2.0 preview
