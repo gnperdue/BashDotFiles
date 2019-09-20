@@ -65,7 +65,6 @@ alias py3drlho="setupminiconda3 && . activate py3drlho"        # Deep RL Hands O
 alias py3fast="setupminiconda3 && . activate py3fast"          # PyTorch 1.0, fastai
 alias py3goat="setupminiconda3 && . activate py3goat"          # TDD book
 alias py3gym="setupminiconda3 && . activate py3gym"            # TF 1.8, OpenAI gym
-alias py3mpnn="setupminiconda3 && . activate py3mpnn"          # stuff for MPNN with cheminformatics
 alias py3ocean="setupminiconda3 && . activate py3ocean"        # tf 1.13.1 and new(?) dwave stuff
 alias py3pymc="setupminiconda3 && . activate py3pymc"          # PyMC3 stuff
 alias py3qiskit="setupminiconda3 && . activate py3qiskit"      # torch and qiskit stuff
