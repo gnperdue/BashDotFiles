@@ -7,9 +7,9 @@ ARCH=`uname`
 echo `date`
 
 PYMAJOR=3
-PYMINOR=6
+PYMINOR=7
 TFMAJOR=1
-TFMINOR=11
+TFMINOR=14
 TFPATCH=0
 CONDAENVNAME="py${PYMAJOR}gym"
 PYVER="${PYMAJOR}.${PYMINOR}"
@@ -61,7 +61,6 @@ conda install -q -y coverage # for test coverage analysis
 ### if you have all the deps, see https://github.com/openai/gym
 # pip install --no-cache-dir 'gym[all]'
 pip install --no-cache-dir 'gym[atari,box2d,classic_control]'
-pip install --no-cache-dir mlflow
 
 DAT=`date +%s`
 mkdir -p ${HOME}/Software/${CONDAENVNAME}/${DAT}
@@ -82,5 +81,7 @@ echo "Activate the $CONDAENVNAME environment with"
 echo "\$ source activate $CONDAENVNAME"
 echo "and deactivate with"
 echo "\$ source deactivate"
+
+python pyverchecker.py
 
 echo -e "\a"
