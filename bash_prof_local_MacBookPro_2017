@@ -75,4 +75,3 @@ alias py3tf2="setupminiconda3 && . activate py3tf2"            # TF 2.0 preview
 alias py3trch="setupminiconda3 && . activate py3trch"          # PyTorch, Py 3.7
 alias py3tfgnt="setupminiconda3 && . activate py3tfgnt"        # TF 2.0-nightly w/ TF-Agents nightly
 alias py3tfq="setupminiconda3 && . activate py3tfq"            # tfq
-alias py3xacc="setupminiconda3 && . activate py3xacc"          # XACC, pyquil, cirq, TF
