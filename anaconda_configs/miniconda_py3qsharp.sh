@@ -43,4 +43,6 @@ echo "\$ source activate $CONDAENVNAME"
 echo "and deactivate with"
 echo "\$ source deactivate"
 
+python pyverchecker.py
+
 echo -e "\a"
