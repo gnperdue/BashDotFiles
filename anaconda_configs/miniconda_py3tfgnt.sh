@@ -6,10 +6,7 @@ ARCH=`uname`
 echo `date`
 
 PYMAJOR=3
-PYMINOR=6
-TFMAJOR=2
-TFMINOR=0
-TFPATCH=0
+PYMINOR=7
 CONDAENVNAME="py3tfgnt"
 PYVER="${PYMAJOR}.${PYMINOR}"
 CONDAINSTALL=""
@@ -45,11 +42,11 @@ conda install -q -y coverage
 #conda install -q -y nbconvert==5.4.1  # may be needed for tornado issue
 
 pip install --no-cache-dir 'gym[atari,box2d,classic_control]'
-pip install --no-cache-dir --upgrade tf-nightly-2.0-preview
+pip install --no-cache-dir --upgrade tensorflow==2.0.0-rc1
 pip install --no-cache-dir --upgrade tf-agents-nightly
 pip install --no-cache-dir --upgrade tfp-nightly
 pip install --no-cache-dir --upgrade tensorflow-datasets
-pip install --no-cache-dir mlflow
+pip install --no-cache-dir guildai
 pip install --no-cache-dir matplotlib
 pip install --no-cache-dir seaborn
 pip install --no-cache-dir scikit-image
@@ -60,5 +57,9 @@ echo "Activate the $CONDAENVNAME environment with"
 echo "\$ source activate $CONDAENVNAME"
 echo "and deactivate with"
 echo "\$ source deactivate"
+echo "  (or possibly, for newer versions of Anaconda)"
+echo "\$ conda deactivate"
+
+python pyverchecker.py
 
 echo -e "\a"

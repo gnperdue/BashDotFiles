@@ -36,10 +36,10 @@ pip install --upgrade pip
 pip install 'python-language-server[all]'
 
 conda install -q -y django=1.11.10
-conda install -q -y selenium
-conda install -q -y ipython
-conda install -q -y tqdm
-conda install -q -y coverage
+conda install -q -y selenium=3.14.0
+conda install -q -y ipython=6.5.0
+conda install -q -y tqdm=4.31.1
+conda install -q -y coverage=4.5.1
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
@@ -47,5 +47,7 @@ echo "Activate the $CONDAENVNAME environment with"
 echo "\$ source activate $CONDAENVNAME"
 echo "and deactivate with"
 echo "\$ source deactivate"
+
+python pyverchecker.py
 
 echo -e "\a"

@@ -8,7 +8,7 @@ echo `date`
 PYMAJOR=3
 PYMINOR=6
 TFMAJOR=1
-TFMINOR=12  # 1.12 is most recent on Conda as of now (1.13.1 on pypi)
+TFMINOR=12
 TFPATCH=0
 CONDAENVNAME="py${PYMAJOR}dlgo"
 PYVER="${PYMAJOR}.${PYMINOR}"
@@ -52,7 +52,6 @@ conda install -q -y pyqtgraph
 conda install -q -y xlrd
 conda install -q -y cython
 conda install -q -y pyyaml
-conda install -q -y sympy
 conda install -q -y tqdm
 conda install -q -y coverage # for test coverage analysis
 
@@ -60,8 +59,6 @@ conda install -q -y coverage # for test coverage analysis
 # pip install --no-cache-dir gym
 ### if you have all the deps, see https://github.com/openai/gym
 pip install --no-cache-dir 'gym[atari,box2d,classic_control]'
-pip install --no-cache-dir mlflow
-pip install --no-cache-dir kaggle
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
@@ -69,5 +66,7 @@ echo "Activate the $CONDAENVNAME environment with"
 echo "\$ source activate $CONDAENVNAME"
 echo "and deactivate with"
 echo "\$ source deactivate"
+
+python pyverchecker.py
 
 echo -e "\a"
