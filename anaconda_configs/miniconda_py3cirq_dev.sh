@@ -34,6 +34,7 @@ conda create -q -y -n $CONDAENVNAME python=$PYVER
 
 pip install --upgrade pip
 pip install 'python-language-server[all]'
+pip install  --no-cache-dir jupyter ipython
 
 DAT=`date +%s`
 mkdir -p ${HOME}/Software/${CONDAENVNAME}/${DAT}
