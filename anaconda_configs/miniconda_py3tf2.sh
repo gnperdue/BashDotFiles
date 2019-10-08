@@ -7,10 +7,10 @@ echo `date`
 
 PYMAJOR=3
 PYMINOR=7
-# TFMAJOR=2
+# TFMAJOR=2 - 2 is now the default...
 # TFMINOR=0
 # TFPATCH=0
-CONDAENVNAME="py${PYMAJOR}tf${TFMAJOR}"
+CONDAENVNAME="py${PYMAJOR}tf"
 PYVER="${PYMAJOR}.${PYMINOR}"
 CONDAINSTALL=""
 MINIDIR=""
@@ -44,7 +44,7 @@ conda install -q -y jupyter
 conda install -q -y tqdm
 conda install -q -y coverage
 
-pip install --no-cache-dir tensorflow==2.0.0-rc1 matplotlib seaborn imageio \
+pip install --no-cache-dir tensorflow matplotlib seaborn imageio \
     scikit-image scikit-learn tf-agents-nightly tfp-nightly
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
