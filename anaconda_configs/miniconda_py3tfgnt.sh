@@ -43,7 +43,7 @@ conda install -q -y coverage
 
 pip install --no-cache-dir 'gym[atari,box2d,classic_control]' tensorflow \
     tf-agents-nightly tfp-nightly tensorflow-datasets matplotlib seaborn \
-    imageio scikit-image scikit-learn guildai
+    imageio scikit-image scikit-learn guildai pyvirtualdisplay
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
