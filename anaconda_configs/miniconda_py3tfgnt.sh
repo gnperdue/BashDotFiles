@@ -33,23 +33,17 @@ conda create -q -y -n $CONDAENVNAME python=$PYVER
 . activate $CONDAENVNAME
 
 pip install --upgrade pip
+pip install --upgrade setuptools
 pip install --no-cache-dir 'python-language-server[all]'
 
 conda install -q -y ipython
 conda install -q -y jupyter
 conda install -q -y tqdm
 conda install -q -y coverage
-#conda install -q -y nbconvert==5.4.1  # may be needed for tornado issue
 
-pip install --no-cache-dir 'gym[atari,box2d,classic_control]'
-pip install --no-cache-dir --upgrade tensorflow==2.0.0-rc1
-pip install --no-cache-dir --upgrade tf-agents-nightly
-pip install --no-cache-dir --upgrade tfp-nightly
-pip install --no-cache-dir --upgrade tensorflow-datasets
-pip install --no-cache-dir guildai
-pip install --no-cache-dir matplotlib
-pip install --no-cache-dir seaborn
-pip install --no-cache-dir scikit-image
+pip install --no-cache-dir 'gym[atari,box2d,classic_control]' tensorflow \
+    tf-agents-nightly tfp-nightly tensorflow-datasets matplotlib seaborn \
+    imageio scikit-image scikit-learn guildai
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
