@@ -48,6 +48,8 @@ python -m pip install -e .
 popd >& /dev/null
 popd >& /dev/null
 
+pip install  --no-cache-dir scikit-learn
+
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
 echo "Activate the $CONDAENVNAME environment with"
