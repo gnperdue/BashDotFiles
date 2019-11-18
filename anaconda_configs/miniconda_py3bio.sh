@@ -32,9 +32,23 @@ conda create -q -y -n $CONDAENVNAME biopython biopython=1.70 python=$PYVER
 
 conda config --add channels bioconda
 conda config --add channels conda-forge
-conda install -q -y scipy matplotlib jupyter-notebook pip pandas cython numba \
-    scikit-learn seaborn pysam pyvcf simuPOP dendropy rpy2
-conda install -q -y r-essentials r-gridextra
+conda install -q -y scipy
+conda install -q -y matplotlib
+conda install -q -y jupyter-notebook
+conda install -q -y pip
+conda install -q -y pandas
+conda install -q -y cython
+conda install -q -y numba
+conda install -q -y scikit-learn
+conda install -q -y seaborn
+conda install -q -y pysam
+conda install -q -y pyvcf
+conda install -q -y simuPOP
+conda install -q -y dendropy
+conda install -q -y rpy2
+
+conda install -q -y r-essentials
+conda install -q -y r-gridextra
 
 #pip install --upgrade pip
 #pip install --upgrade setuptools
