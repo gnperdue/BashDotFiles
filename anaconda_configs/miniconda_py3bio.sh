@@ -35,6 +35,7 @@ conda config --add channels conda-forge
 conda install -q -y scipy
 conda install -q -y matplotlib
 conda install -q -y jupyter-notebook
+conda install -q -y ipython
 conda install -q -y pip
 conda install -q -y pandas
 conda install -q -y cython
