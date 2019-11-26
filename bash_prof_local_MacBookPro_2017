@@ -61,6 +61,7 @@ alias py3astro="setupminiconda3 && . activate py3astro"        # tf 1.12 and ast
 alias py3bio="setupminiconda3 && . activate py3bio"            # bioinformatics stuff
 alias py3cirq="setupminiconda3 && . activate py3cirq"          # TF 1.12 and cirq stuff
 alias py3cirq_dev="setupminiconda3 && . activate py3cirq_dev"  # TF 1.13.1 and cirq-dev stuff
+alias py3dchem="setupminiconda3 && . activate py3dchem"        # DeepChem
 alias py3dlgo="setupminiconda3 && . activate py3dlgo"          # Deep Learning & Game of Go
 alias py3drlho="setupminiconda3 && . activate py3drlho"        # Deep RL Hands On env
 alias py3fast="setupminiconda3 && . activate py3fast"          # PyTorch 1.0, fastai

@@ -74,6 +74,7 @@ alias py3accelai="setupminiconda3 && . activate py3accelai"    # TF, etc.
 alias py3astro="setupminiconda3 && . activate py3astro"        # tf 1.12 and astropy
 alias py3cirq="setupminiconda3 && . activate py3cirq"          # TF 1.14 and qiskit stuff
 alias py3cirq_dev="setupminiconda3 && . activate py3cirq_dev"  # TF 1.14 and cirq-dev stuff
+alias py3dchem="setupminiconda3 && . activate py3dchem"        # DeepChem
 alias py3drlho="setupminiconda3 && . activate py3drlho"        # Deep RL Hands On env
 alias py3fast="setupminiconda3 && . activate py3fast"          # PyTorch, fastai
 alias py3gym="setupminiconda3 && . activate py3gym"            # TF 1.8, OpenAI gym
