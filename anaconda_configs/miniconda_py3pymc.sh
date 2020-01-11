@@ -6,10 +6,7 @@ ARCH=`uname`
 echo `date`
 
 PYMAJOR=3
-PYMINOR=6
-TFMAJOR=1
-TFMINOR=8
-TFPATCH=0
+PYMINOR=7
 CONDAENVNAME="py${PYMAJOR}pymc"
 PYVER="${PYMAJOR}.${PYMINOR}"
 CONDAINSTALL=""
@@ -53,10 +50,11 @@ conda install -q -y pyqtgraph
 conda install -q -y xlrd
 # conda install -q -y cython
 conda install -q -y h5py
+# conda install mkl-service  # needed?
 
-pip install --no-cache-dir --disable-pip-version-check --ignore-installed msgpack
+# pip install --no-cache-dir --disable-pip-version-check --ignore-installed msgpack
 # conda install -q -y -c conda-forge praw
-pip install --no-cache-dir --disable-pip-version-check --ignore-installed praw
+# pip install --no-cache-dir --disable-pip-version-check --ignore-installed praw
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
