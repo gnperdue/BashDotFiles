@@ -81,6 +81,7 @@ alias py3gym="setupminiconda3 && . activate py3gym"            # TF 1.8, OpenAI 
 alias py3mpnn="setupminiconda3 && . activate py3mpnn"          # stuff for MPNN with cheminformatics
 alias py3ocean="setupminiconda3 && . activate py3ocean"        # tf 1.13.1 and new(?) dwave stuff
 alias py3penny="setupminiconda3 && . activate py3penny"        # pytorch and pennylane
+alias py3pymc="setupminiconda3 && . activate py3pymc"          # pymc3
 alias py3qcf="setupminiconda3 && . activate py3qcf"            # Andy Li's QC Framework env
 alias py3qiskit="setupminiconda3 && . activate py3qiskit"      # torch and qiskit stuff
 alias py3qubo="setupminiconda3 && . activate py3qubo"          # tf 1.11 and some dwave stuff
