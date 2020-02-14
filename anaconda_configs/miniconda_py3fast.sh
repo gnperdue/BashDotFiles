@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Python 3.6 - PyTorch with python-language-server & fastai
+# Python 3.7 - PyTorch with python-language-server & fastai
 # Note, `swig` v3+ is required for gym. Consider `brew install swig`
 
 ARCH=`uname`
@@ -36,6 +36,7 @@ pip install typing_extensions   # Py 3.7 feature
 
 conda install -q -y -c pytorch -c fastai fastai
 conda install -q -y -c conda-forge xgboost
+conda install -q -y fire
 conda install -q -y scikit-image
 conda install -q -y scikit-learn
 conda install -q -y ipython
