@@ -2,18 +2,15 @@
 
 # "py3cirq" - for Python 3 with Cirq.
 
-# TF 1.12, python-language-server (for atom), other valued packages.
+# python-language-server (for atom), other valued packages.
 # Note, this env has issues with TensorBoard (should use a bare TF only
-# env for TB).
+# env for TB)? - maybe fixed by now...
 
 ARCH=`uname`
 echo `date`
 
 PYMAJOR=3
 PYMINOR=7
-TFMAJOR=1
-TFMINOR=14
-TFPATCH=0
 CONDAENVNAME="py${PYMAJOR}cirq"
 PYVER="${PYMAJOR}.${PYMINOR}"
 CONDAINSTALL=""
@@ -42,7 +39,7 @@ conda create -q -y -n $CONDAENVNAME python=$PYVER
 pip install --upgrade pip
 pip install 'python-language-server[all]'
 
-conda install -q -y tensorflow=${TFMAJOR}.${TFMINOR}.${TFPATCH}
+conda install -q -y tensorflow
 conda install -q -y -c conda-forge tensorflow-probability
 conda install -q -y -c conda-forge xgboost
 conda install -q -y scikit-image
