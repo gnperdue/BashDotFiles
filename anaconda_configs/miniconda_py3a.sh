@@ -1,16 +1,13 @@
 #!/bin/bash
 
 # "py3a" - for Python 3 with atom.
-# TF 1.14.0, python-language-server (for atom), other valued packages.
+# TF 2.x, python-language-server (for atom), other valued packages.
 
 ARCH=`uname`
 echo `date`
 
 PYMAJOR=3
 PYMINOR=7
-TFMAJOR=1
-TFMINOR=14  # most recent on Conda as of 2019/sept/12
-TFPATCH=0
 CONDAENVNAME="py${PYMAJOR}a"
 PYVER="${PYMAJOR}.${PYMINOR}"
 CONDAINSTALL=""
@@ -39,7 +36,7 @@ conda create -q -y -n $CONDAENVNAME python=$PYVER
 pip install --upgrade pip
 pip install 'python-language-server[all]'
 
-conda install -q -y tensorflow=${TFMAJOR}.${TFMINOR}.${TFPATCH}
+conda install -q -y tensorflow
 conda install -q -y -c conda-forge tensorflow-probability
 conda install -q -y -c conda-forge xgboost
 conda install -q -y scikit-image
@@ -47,6 +44,7 @@ conda install -q -y scikit-learn
 conda install -q -y seaborn
 conda install -q -y ipython
 conda install -q -y jupyter
+conda install -q -y fire
 conda install -q -y pymysql
 conda install -q -y sqlalchemy
 conda install -q -y pandas-datareader
