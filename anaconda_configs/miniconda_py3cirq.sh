@@ -39,26 +39,26 @@ conda create -q -y -n $CONDAENVNAME python=$PYVER
 pip install --upgrade pip
 pip install 'python-language-server[all]'
 
-conda install -q -y tensorflow
-conda install -q -y -c conda-forge tensorflow-probability
-conda install -q -y -c conda-forge xgboost
-conda install -q -y scikit-image
-conda install -q -y scikit-learn
-conda install -q -y seaborn
+# conda install -q -y -c conda-forge xgboost
+# conda install -q -y scikit-image
+# conda install -q -y scikit-learn
+# conda install -q -y seaborn
 conda install -q -y ipython
 conda install -q -y jupyter
-conda install -q -y pymysql
-conda install -q -y sqlalchemy
-conda install -q -y pandas-datareader
-conda install -q -y pyqtgraph
-conda install -q -y xlrd
-conda install -q -y cython
-conda install -q -y pyyaml
-conda install -q -y sympy
-conda install -q -y tqdm
-conda install -q -y pytest
+# conda install -q -y pymysql
+# conda install -q -y sqlalchemy
+# conda install -q -y pandas-datareader
+# conda install -q -y pyqtgraph
+# conda install -q -y xlrd
+# conda install -q -y cython
+# conda install -q -y pyyaml
+# conda install -q -y sympy
+# conda install -q -y tqdm
+# conda install -q -y pytest
 
-pip install openfermion cirq openfermioncirq
+pip install tensorflow==2.1.0
+pip install cirq==0.7.0
+pip install tensorflow-quantum
 
 # pip install --upgrade cirq==0.6.0.dev20190812145344
 # these will probably downgrade to cirq
