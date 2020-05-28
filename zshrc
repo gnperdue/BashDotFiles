@@ -68,4 +68,6 @@ setupminiconda3() {
   # add miniconda3 to PATH
   export PATH="/Users/perdue/miniconda3/bin:$PATH"
 }
+alias py3a="setupminiconda3 && . activate py3a"                # TF, data sci basics
+alias py3fast="setupminiconda3 && . activate py3fast"          # PyTorch 1.?, fastai
 alias py3qutip="setupminiconda3 && . activate py3qutip"        # qutip stuff
