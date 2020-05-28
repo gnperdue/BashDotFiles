@@ -40,8 +40,8 @@ pip install --upgrade pip
 pip install 'python-language-server[all]'
 
 # conda install -q -y -c conda-forge xgboost
-# conda install -q -y scikit-image
-# conda install -q -y scikit-learn
+conda install -q -y scikit-image
+conda install -q -y scikit-learn
 # conda install -q -y seaborn
 conda install -q -y ipython
 conda install -q -y jupyter
