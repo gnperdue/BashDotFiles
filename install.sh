@@ -39,19 +39,24 @@ if [ -e $HOME/.gitignore_global ]; then
   mv -v $HOME/.gitignore_global $HOME/.gitignore_global_bck_$DAT
 fi
 
-mkdir -p $HOME/.lein
-cp lein/profiles.clj $HOME/.lein/profiles.clj
+# uncomment this for Clojure
+#mkdir -p $HOME/.lein
+#cp lein/profiles.clj $HOME/.lein/profiles.clj
 
 echo "Linking files..."
 ln -sv `pwd`/bash_profile $HOME/.bash_profile
 ln -sv `pwd`/gitignore_global $HOME/.gitignore_global
 echo " "
+
+# be careful with this since it will over-write a token you can't look at.
+#cp gitconfig ~/.gitconfig
+#echo "You need to update the token in your ~/.gitconfig"
+
 echo "You need to get around to configuring a look up for the local!"
 echo " Options include: "
-echo "   ln -sv `pwd`/bash_prof_local_MacBook_2010 \$HOME/.bash_prof_local"
 echo "   ln -sv `pwd`/bash_prof_local_MacBookPro_2017 \$HOME/.bash_prof_local"
+echo "   ln -sv `pwd`/bash_prof_local_MacBookPro_2020 \$HOME/.bash_prof_local"
 echo "   ln -sv `pwd`/bash_prof_local_iMac_2017 \$HOME/.bash_prof_local"
-echo "   ln -sv `pwd`/bash_prof_local_titan \$HOME/.bash_prof_local"
 echo "   ln -sv `pwd`/bash_prof_local_ubuntu \$HOME/.bash_prof_local"
 echo " "
 echo "Done."
