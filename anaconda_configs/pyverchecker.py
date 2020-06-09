@@ -20,11 +20,11 @@ def test_module_version(module_name):
 
 
 modules = [
-    'cirq', 'coverage', 'django', 'fastai', 'gevent', 'gym', 'h5py', 'horovod',
-    'IPython', 'joblib', 'jupyter', 'matplotlib', 'mlflow', 'mpi4py', 'nltk',
-    'numpy', 'pandas', 'pennylane', 'pycurl', 'pyls', 'pyqtgraph', 'qiskit',
-    'qutip', 'seaborn', 'scipy', 'selenium', 'skimage', 'sklearn', 'sympy',
-    'tables', 'tensorboardX', 'tensorflow', 'tensorflow_probability',
+    'cirq', 'coverage', 'django', 'fastai', 'fastai2', 'gevent', 'gym', 'h5py',
+    'horovod', 'IPython', 'joblib', 'jupyter', 'matplotlib', 'mlflow', 'mpi4py',
+    'nltk', 'numpy', 'pandas', 'pennylane', 'pycurl', 'pyls', 'pyqtgraph',
+    'qiskit', 'qutip', 'seaborn', 'scipy', 'selenium', 'skimage', 'sklearn',
+    'sympy', 'tables', 'tensorboardX', 'tensorflow', 'tensorflow_probability',
     'tf_agents', 'torch', 'torchvision', 'tornado', 'xgboost', 'xacc', 'xlrd',
     'yaml',
 ]
