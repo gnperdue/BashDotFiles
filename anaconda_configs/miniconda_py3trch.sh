@@ -61,6 +61,7 @@ pip install --no-cache-dir tensorboardX
 pip install --no-cache-dir kaggle
 
 DAT=`date +%s`
+echo "Making ${HOME}/Software/${CONDAENVNAME}/${DAT}"
 mkdir -p ${HOME}/Software/${CONDAENVNAME}/${DAT}
 pushd ${HOME}/Software/${CONDAENVNAME}/${DAT} >& /dev/null
 git clone https://github.com/gnperdue/gym-oscillator.git
