@@ -6,19 +6,19 @@
 
 DAT=`date -u +%s`
 
-filelist='.zshrc .gitignore_global'
+filelist='zshrc gitignore_global'
 
 for flnm in $filelist
 do
-  if [ -L $HOME/$flnm ]; then
+  if [ -L $HOME/.$flnm ]; then
     echo "Found existing $flnm as a link..."
     echo " Removing $flnm symbolic link..."
-    rm -v $HOME/$flnm
+    rm -v $HOME/.$flnm
   fi
-  if [ -e $HOME/$flnm ]; then
+  if [ -e $HOME/.$flnm ]; then
     echo "Found existing $flnm as a file..."
     echo " Making $flnm bck file..."
-    mv -v $HOME/$flnm $HOME/${flnm}_bck_${DAT}
+    mv -v $HOME/.$flnm $HOME/.${flnm}_bck_${DAT}
   fi
 done
 
@@ -26,10 +26,10 @@ done
 #mkdir -p $HOME/.lein
 #cp lein/profiles.clj $HOME/.lein/profiles.clj
 
-echo "Linking files..."
+echo "Copying files..."
 for flnm in $filelist
 do
-  ln -sv `pwd`/$flnm $HOME/$flnm
+  cp -v `pwd`/$flnm $HOME/.$flnm
 done
 echo " "
 
