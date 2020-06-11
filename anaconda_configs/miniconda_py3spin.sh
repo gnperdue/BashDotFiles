@@ -1,15 +1,13 @@
 #!/bin/bash
 
 # "py3spin" - for Python 3 with OpenAI's 'spinning up'.
+# Note, openmpi installed via `brew install openmpi`
 
 ARCH=`uname`
 echo `date`
 
 PYMAJOR=3
 PYMINOR=6
-TFMAJOR=1
-TFMINOR=12
-TFPATCH=0
 CONDAENVNAME="py${PYMAJOR}spin"
 PYVER="${PYMAJOR}.${PYMINOR}"
 CONDAINSTALL=""
@@ -40,7 +38,7 @@ pip install 'python-language-server[all]'
 
 git clone https://github.com/gnperdue/spinningup.git
 cd spinningup
-git checkout 8b92b8a
+git checkout 038665d
 pip install -e .
 cd ..
 rm -rf spinningup
