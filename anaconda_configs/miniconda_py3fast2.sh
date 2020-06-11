@@ -41,7 +41,7 @@ pip install ipywidgets
 pip install matplotlib
 pip install 'nbdev>=0.2.12'
 pip install pandas
-pip install scikit_learn
+pip install scikit-learn
 pip install azure-cognitiveservices-search-imagesearch
 pip install sentencepiece
 
