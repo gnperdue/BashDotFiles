@@ -36,9 +36,10 @@ pip install --upgrade pip
 pip install 'python-language-server[all]'
 
 conda install -q -y tensorflow  # should get 2.X by default now
-conda install -q -y -c pytorch -c fastai fastai
+conda install -q -y pytorch torchvision -c pytorch
 conda install -q -y -c conda-forge tensorboardx
 conda install -q -y -c conda-forge xgboost
+conda install -q -y -c conda-forge tsfresh
 conda install -q -y scikit-image
 conda install -q -y scikit-learn
 conda install -q -y ipython
