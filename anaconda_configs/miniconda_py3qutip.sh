@@ -46,6 +46,7 @@ conda install -q -y jupyter
 conda install -q -y notebook
 conda install -q -y ipython
 conda install -q -y tqdm
+conda install -q -y sympy
 conda install -q -y -c conda-forge imagemagick
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
