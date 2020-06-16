@@ -74,3 +74,4 @@ alias py3cirq="setupminiconda3 && . activate py3cirq"          # TF2.1, TFQ, cir
 alias py3fast="setupminiconda3 && . activate py3fast"          # PyTorch 1.?, fastai
 alias py3fast2="setupminiconda3 && . activate py3fast2"        # PyTorch 1.?, fastai2
 alias py3qutip="setupminiconda3 && . activate py3qutip"        # qutip stuff
+alias py3q="setupminiconda3 && . activate py3q"                # cirq, tfq, qutip, qiskit
