@@ -36,7 +36,7 @@ pip install typing_extensions   # Py 3.7 feature
 
 conda install -q -y -c pytorch -c fastai fastai
 conda install -q -y -c conda-forge xgboost
-conda install -q -y fire
+conda install -q -y -c conda-forge fire
 conda install -q -y scikit-image
 conda install -q -y scikit-learn
 conda install -q -y ipython
