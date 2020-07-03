@@ -35,6 +35,7 @@ pip install 'python-language-server[all]'
 pip install typing_extensions   # Py 3.7 feature
 
 conda install -q -y pytorch torchvision -c pytorch
+conda install -q -y tensorboard tensorboardx -c conda-forge
 conda install -q -y -c conda-forge xgboost
 conda install -q -y scikit-image
 conda install -q -y scikit-learn
@@ -45,10 +46,8 @@ conda install -q -y sqlalchemy
 conda install -q -y pandas-datareader
 conda install -q -y h5py
 conda install -q -y ujson
-conda install -q -y tornado  # probably already installed at this point
 conda install -q -y gevent
 conda install -q -y pycurl
-conda install -q -y aiohttp  # for High Performance Python examples
 conda install -q -y tqdm     # for Fluent Python
 conda install -q -y coverage # for test coverage analysis
 
@@ -57,7 +56,6 @@ conda install -q -y coverage # for test coverage analysis
 ### if you have all the deps, see https://github.com/openai/gym
 pip install --no-cache-dir 'gym[atari,box2d,classic_control]'
 # pip install --no-cache-dir mlflow
-pip install --no-cache-dir tensorboardX
 pip install --no-cache-dir kaggle
 
 DAT=`date +%s`
