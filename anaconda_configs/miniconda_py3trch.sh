@@ -35,6 +35,7 @@ pip install 'python-language-server[all]'
 pip install typing_extensions   # Py 3.7 feature
 
 conda install -q -y pytorch torchvision -c pytorch
+conda install -q -y pytorch-lightning -c conda-forge
 conda install -q -y tensorboard tensorboardx -c conda-forge
 conda install -q -y -c conda-forge xgboost
 conda install -q -y scikit-image
