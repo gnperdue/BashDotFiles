@@ -74,6 +74,7 @@ alias py3cirq="setupminiconda3 && . activate py3cirq"          # TF2.1, TFQ, cir
 alias py3dmda="setupminiconda3 && . activate py3dmda"          # deep merge domain adaptation
 alias py3fast="setupminiconda3 && . activate py3fast"          # PyTorch 1.?, fastai
 alias py3fast2="setupminiconda3 && . activate py3fast2"        # PyTorch 1.?, fastai2
+alias py3gdl="setupminiconda3 && . activate py3gdl"            # TF2 based generative deep learning
 alias py3qutip="setupminiconda3 && . activate py3qutip"        # qutip stuff
 alias py3q="setupminiconda3 && . activate py3q"                # cirq, tfq, qutip, qiskit
 alias py3qiskit="setupminiconda3 && . activate py3qiskit"      # qiskit, etc.
