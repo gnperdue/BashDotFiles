@@ -57,6 +57,8 @@ fi
 # path stuff
 # note - if Homebrew is installed, the directory order has been set in /etc/paths (somehow)
 export PATH=$PATH:~/PersonalScripts:~/Dropbox/UnixSettings/LocalScripts
+# gem for jekyll, ruby stuff
+export PATH=$PATH:/Users/perdue/.gem/ruby/2.6.0/bin
 
 # Python and conda stuff
 setupminiconda3() {
