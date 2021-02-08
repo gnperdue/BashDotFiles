@@ -26,7 +26,6 @@ alias s="source ~/.zshrc"
 alias df="df -H"
 alias du="du -h"
 alias cmore="clear; more"
-alias chkpath="echo $PATH | tr \":\" \"\n\" | sort"
 
 # keep emacs in-window on Mac
 alias emacs="emacs -nw"
@@ -55,10 +54,10 @@ fi
 }
 
 # path stuff
-# note - if Homebrew is installed, the directory order has been set in /etc/paths (somehow)
 export PATH=$PATH:~/PersonalScripts:~/Dropbox/UnixSettings/LocalScripts
-# gem for jekyll, ruby stuff
-export PATH=$PATH:/Users/perdue/.gem/ruby/2.6.0/bin
+eval $(/opt/homebrew/bin/brew shellenv)
+# gem for jekyll, ruby stuff - problems on M1, blow this up and come back to it (2021-02-08)
+#export PATH=$PATH:/Users/perdue/.gem/ruby/2.6.0/bin
 
 # Python and conda stuff
 setupminiconda3() {
@@ -82,3 +81,7 @@ alias py3q="setupminiconda3 && . activate py3q"                  # cirq, tfq, qu
 alias py3lqcqiskit="setupminiconda3 && . activate py3lqcqiskit"  # qiskit, etc.
 alias py3qiskit="setupminiconda3 && . activate py3qiskit"        # qiskit, etc.
 alias py3trch="setupminiconda3 && . activate py3trch"            # pytorch
+
+# PATH used here is the PATH we end up with in the script
+alias chkpath="echo $PATH | tr \":\" \"\n\" | sort"
+
