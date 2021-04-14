@@ -38,6 +38,7 @@ pip install --upgrade setuptools
 pip install 'python-language-server[all]'
 pip install git+https://github.com/qiskit-community/qiskit-textbook.git#subdirectory=qiskit-textbook-src
 pip install numexpr
+pip install seaborn
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
