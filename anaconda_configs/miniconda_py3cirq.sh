@@ -39,7 +39,7 @@ conda create -q -y -n $CONDAENVNAME python=$PYVER
 pip install --upgrade pip
 pip install 'python-language-server[all]'
 
-pip install tensorflow==2.1.0
+pip install tensorflow==2.4.1
 pip install tensorflow-quantum
 pip install cirq
 pip install notebook
