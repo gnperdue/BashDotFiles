@@ -1,15 +1,12 @@
 #!/bin/bash
 
-# "py3tf2" - TF 2.0 Preview
+# "py3tf" - TensorFlow with Agents and Probability
 
 ARCH=`uname`
 echo `date`
 
 PYMAJOR=3
-PYMINOR=7
-# TFMAJOR=2 - 2 is now the default...
-# TFMINOR=0
-# TFPATCH=0
+PYMINOR=9
 CONDAENVNAME="py${PYMAJOR}tf"
 PYVER="${PYMAJOR}.${PYMINOR}"
 CONDAINSTALL=""
@@ -45,7 +42,7 @@ conda install -q -y tqdm
 conda install -q -y coverage
 
 pip install --no-cache-dir tensorflow matplotlib seaborn imageio \
-    scikit-image scikit-learn tf-agents-nightly tfp-nightly
+    scikit-image scikit-learn tf-agents[reverb] tensorflow-probability
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
