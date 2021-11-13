@@ -71,7 +71,7 @@ setupminiconda3() {
   # add miniconda3 to PATH
   export PATH="/Users/perdue/miniconda3/bin:$PATH"
 }
-#alias py3a="setupminiconda3 && . activate py3a"                  # TF, data sci basics
+alias py3a="setupminiconda3 && . activate py3a"                  # TF, data sci basics
 #alias py3astro="setupminiconda3 && . activate py3astro"          # astropy, some ml stuff
 #alias py3cirq="setupminiconda3 && . activate py3cirq"            # TF2.1, TFQ, cirq, data sci basics
 #alias py3dmda="setupminiconda3 && . activate py3dmda"            # deep merge domain adaptation
@@ -83,7 +83,7 @@ setupminiconda3() {
 #alias py3lqcqiskit="setupminiconda3 && . activate py3lqcqiskit"  # qiskit, etc.
 #alias py3qiskit="setupminiconda3 && . activate py3qiskit"        # qiskit, etc.
 #alias py3trch="setupminiconda3 && . activate py3trch"            # pytorch
-alias py3tf="setupminiconda3 && . activate py3tf"            # pytorch
+#alias py3tf="setupminiconda3 && . activate py3tf"            # pytorch
 
 # PATH used here is the PATH we end up with in the script
 alias chkpath="echo $PATH | tr \":\" \"\n\" | sort"
