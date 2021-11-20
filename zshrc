@@ -61,7 +61,7 @@ eval $(/opt/homebrew/bin/brew shellenv)
 # Haskell stuff
 export PATH="$HOME/.cabal/bin:/Users/perdue/.ghcup/bin:$PATH"
 # VSCode
-export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 # Python and conda stuff
 setupminiconda3() {
