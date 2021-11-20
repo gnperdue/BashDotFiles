@@ -29,6 +29,9 @@ done
 # Julia
 sudo ln -s /Applications/Julia-1.6.app/Contents/Resources/julia/bin/julia /usr/local/bin/julia
 
+# VSCode
+export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
 echo "Copying files..."
 for flnm in $filelist
 do
