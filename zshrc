@@ -58,8 +58,9 @@ export PATH=$PATH:~/PersonalScripts:~/Dropbox/UnixSettings/LocalScripts
 eval $(/opt/homebrew/bin/brew shellenv)
 # gem for jekyll, ruby stuff - problems on M1, blow this up and come back to it (2021-02-08)
 #export PATH=$PATH:/Users/perdue/.gem/ruby/2.6.0/bin
-# Haskell stuff
-export PATH="$HOME/.cabal/bin:/Users/perdue/.ghcup/bin:$PATH"
+# Haskell stuff - needs rationalization, probably
+#export PATH="$HOME/.cabal/bin:/Users/perdue/.ghcup/bin:$PATH"
+[ -f "/Users/perdue/.ghcup/env" ] && source "/Users/perdue/.ghcup/env" # ghcup-env
 # VSCode
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
@@ -73,7 +74,7 @@ setupminiconda3() {
   # add miniconda3 to PATH
   export PATH="/Users/perdue/miniconda3/bin:$PATH"
 }
-alias py3a="setupminiconda3 && . activate py3a"                  # TF, data sci basics
+alias py3j="setupminiconda3 && . activate py3j"                  # jupyter, ipython
 #alias py3astro="setupminiconda3 && . activate py3astro"          # astropy, some ml stuff
 #alias py3cirq="setupminiconda3 && . activate py3cirq"            # TF2.1, TFQ, cirq, data sci basics
 #alias py3dmda="setupminiconda3 && . activate py3dmda"            # deep merge domain adaptation
@@ -89,3 +90,4 @@ alias py3a="setupminiconda3 && . activate py3a"                  # TF, data sci 
 
 # PATH used here is the PATH we end up with in the script
 alias chkpath="echo $PATH | tr \":\" \"\n\" | sort"
+
