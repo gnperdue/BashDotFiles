@@ -72,9 +72,11 @@ setupminiconda3() {
   export PATH="${PATH/\/Users\/perdue\/miniconda3\/bin:/}"
   export PATH="${PATH/\/Users\/perdue\/miniconda2\/bin:/}"
   # add miniconda3 to PATH
-  export PATH="/Users/perdue/miniconda3/bin:$PATH"
+  #export PATH="/Users/perdue/miniconda3/bin:$PATH"
+  source ~/miniconda3/etc/profile.d/conda.sh
 }
-alias py3j="setupminiconda3 && . activate py3j"                  # jupyter, ipython
+alias py3j="setupminiconda3 && conda activate py3j"                  # jupyter, ipython
+alias py3trch="setupminiconda3 && conda activate py3trch"            # pytorch
 #alias py3astro="setupminiconda3 && . activate py3astro"          # astropy, some ml stuff
 #alias py3cirq="setupminiconda3 && . activate py3cirq"            # TF2.1, TFQ, cirq, data sci basics
 #alias py3dmda="setupminiconda3 && . activate py3dmda"            # deep merge domain adaptation
@@ -85,7 +87,6 @@ alias py3j="setupminiconda3 && . activate py3j"                  # jupyter, ipyt
 #alias py3q="setupminiconda3 && . activate py3q"                  # cirq, tfq, qutip, qiskit
 #alias py3lqcqiskit="setupminiconda3 && . activate py3lqcqiskit"  # qiskit, etc.
 #alias py3qiskit="setupminiconda3 && . activate py3qiskit"        # qiskit, etc.
-#alias py3trch="setupminiconda3 && . activate py3trch"            # pytorch
 #alias py3tf="setupminiconda3 && . activate py3tf"            # pytorch
 
 # PATH used here is the PATH we end up with in the script
