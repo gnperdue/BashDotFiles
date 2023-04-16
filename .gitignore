@@ -1,1 +1,4 @@
 .DS_Store
+
+# don't keep the install scripts from conda
+Miniconda3-latest-MacOSX-arm64*
