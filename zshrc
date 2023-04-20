@@ -75,6 +75,9 @@ setupminiconda3() {
   #export PATH="/Users/perdue/miniconda3/bin:$PATH"
   source ~/miniconda3/etc/profile.d/conda.sh
 }
+# by DEFAULT --- set up miniconda3
+setupminiconda3
+
 alias py3j="setupminiconda3 && conda activate py3j"                  # jupyter, ipython
 alias py3trch="setupminiconda3 && conda activate py3trch"            # pytorch
 #alias py3astro="setupminiconda3 && . activate py3astro"          # astropy, some ml stuff
