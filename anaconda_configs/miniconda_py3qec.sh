@@ -47,6 +47,8 @@ conda install -q -y h5py
 conda install -q -y tabulate
 
 pip install --no-cache-dir qiskit
+pip install --no-cache-dir qiskit-aer
+pip install --no-cache-dir pylatexenc
 
 echo "Be sure to adjust your PATH and include $HOME/$MINIDIR/bin"
 echo " e.g., export PATH=$HOME/$MINIDIR/bin:\$PATH"
