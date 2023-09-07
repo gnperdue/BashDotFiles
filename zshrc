@@ -80,10 +80,10 @@ setupminiconda3
 
 #alias py3j="setupminiconda3 && conda activate py3j"              # jupyter, ipython
 #alias py3trch="setupminiconda3 && conda activate py3trch"        # pytorch
-alias py3tf="setupminiconda3 && . activate py3tf"                 # tensorflow
+#alias py3tf="setupminiconda3 && . activate py3tf"                 # tensorflow
 alias py3qec="setupminiconda3 && conda activate py3qec"           # FNAL quantum error correction
+alias py3cirq="setupminiconda3 && conda activate py3cirq"             # cirq, data science basics
 #alias py3astro="setupminiconda3 && . activate py3astro"          # astropy, some ml stuff
-#alias py3cirq="setupminiconda3 && . activate py3cirq"            # TF2.1, TFQ, cirq, data sci basics
 #alias py3dmda="setupminiconda3 && . activate py3dmda"            # deep merge domain adaptation
 #alias py3fast="setupminiconda3 && . activate py3fast"            # PyTorch 1.?, fastai
 #alias py3fast2="setupminiconda3 && . activate py3fast2"          # PyTorch 1.?, fastai2
