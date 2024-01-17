@@ -34,6 +34,7 @@ for flnm in $filelist
 do
   cp -v `pwd`/$flnm $HOME/.$flnm
 done
+cp -v `pwd`/zshrc_mini2020 $HOME/.zshrc_local
 echo " "
 
 # be careful with this since it will over-write a token you can't look at on
