@@ -79,20 +79,9 @@ setupminiconda3() {
 setupminiconda3
 
 #alias py3j="setupminiconda3 && conda activate py3j"              # jupyter, ipython
-#alias py3trch="setupminiconda3 && conda activate py3trch"        # pytorch
-#alias py3tf="setupminiconda3 && . activate py3tf"                 # tensorflow
-alias py3qec="setupminiconda3 && conda activate py3qec"           # FNAL quantum error correction
-alias py3cirq="setupminiconda3 && conda activate py3cirq"             # cirq, data science basics
-#alias py3astro="setupminiconda3 && . activate py3astro"          # astropy, some ml stuff
-#alias py3dmda="setupminiconda3 && . activate py3dmda"            # deep merge domain adaptation
-#alias py3fast="setupminiconda3 && . activate py3fast"            # PyTorch 1.?, fastai
-#alias py3fast2="setupminiconda3 && . activate py3fast2"          # PyTorch 1.?, fastai2
-#alias py3gdl="setupminiconda3 && . activate py3gdl"              # TF2 based generative deep learning
-#alias py3qutip="setupminiconda3 && . activate py3qutip"          # qutip stuff
-#alias py3q="setupminiconda3 && . activate py3q"                  # cirq, tfq, qutip, qiskit
-#alias py3lqcqiskit="setupminiconda3 && . activate py3lqcqiskit"  # qiskit, etc.
-#alias py3qiskit="setupminiconda3 && . activate py3qiskit"        # qiskit, etc.
 
 # PATH used here is the PATH we end up with in the script
 alias chkpath="echo $PATH | tr \":\" \"\n\" | sort"
 
+# Local stuff
+source $HOME/.zshrc_local
