@@ -71,16 +71,17 @@ pip install --upgrade setuptools
 # works
 rm -vf requirements_stim.txt
 cat <<EOT >> requirements_stim.txt
-ipython<=8.22.2
-jupyter<=1.0.0
-matplotlib
-numpy
-PyMatching<=2.2.0
+ipython==8.22.2
+jupyter==1.0.0
+matplotlib==3.8.3
+numpy==1.26.4
+PyMatching==2.2.0
 QKeras==0.9.0
-scikit-learn
-scipy
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+sinter==1.12.1
 stim==1.12.1
-tensorboard
+tensorboard==2.11.2
 tensorflow==2.11.1
 EOT
 pip install -r requirements_stim.txt
