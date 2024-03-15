@@ -55,7 +55,7 @@ fi
 
 # path stuff
 export PATH=$PATH:~/PersonalScripts:~/Dropbox/UnixSettings/LocalScripts
-eval $(/opt/homebrew/bin/brew shellenv)
+#eval $(/opt/homebrew/bin/brew shellenv)
 # gem for jekyll, ruby stuff - problems on M1, blow this up and come back to it (2021-02-08)
 #export PATH=$PATH:/Users/perdue/.gem/ruby/2.6.0/bin
 # Haskell stuff - needs rationalization, probably
