@@ -68,7 +68,7 @@ pip install --upgrade setuptools
 # EOT
 # pip install -r requirements_stim.txt
 
-# ...
+# works
 rm -vf requirements_stim.txt
 cat <<EOT >> requirements_stim.txt
 ipython<=8.22.2
