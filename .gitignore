@@ -2,3 +2,6 @@
 
 # don't keep the install scripts from conda
 Miniconda3-latest-MacOSX-arm64*
+
+# don't keep auto-generated requirements files 
+anaconda_configs/requirements*
