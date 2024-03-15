@@ -2,6 +2,7 @@ alias py3qec="setupminiconda3 && conda activate py3qec"           # "CoolName" q
 alias py3cirq="setupminiconda3 && conda activate py3cirq"         # cirq, data science basics
 alias py3tf="setupminiconda3 && conda activate py3tf"             # tensorflow
 alias py3liver="setupminiconda3 && conda activate py3liver"       # Liverpool + FNAL QEC stuff
+alias py3stim="setupminiconda3 && conda activate py3stim"         # Stim, cirq
 
 #alias py3j="setupminiconda3 && conda activate py3j"                  # jupyter, ipython
 #alias py3trch="setupminiconda3 && conda activate py3trch"            # pytorch
