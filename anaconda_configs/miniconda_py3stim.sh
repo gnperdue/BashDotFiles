@@ -71,6 +71,7 @@ pip install --upgrade setuptools
 # works
 rm -vf requirements_stim.txt
 cat <<EOT >> requirements_stim.txt
+cirq<=1.2
 ipython==8.22.2
 jupyter==1.0.0
 matplotlib==3.8.3
