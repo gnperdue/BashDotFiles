@@ -1,11 +1,12 @@
-alias py3basic="setupminiconda3 && conda activate py3basic"       # Jupyter, IPython
-alias py3buildallm="setupminiconda3 && conda activate py3buildallm"       # Jupyter, IPython
-alias py3cirq="setupminiconda3 && conda activate py3cirq"         # cirq, data science basics
-alias py3liver="setupminiconda3 && conda activate py3liver"       # Liverpool + FNAL QEC stuff
-alias py3qec="setupminiconda3 && conda activate py3qec"           # "CoolName" quantum error correction
-alias py3qknn="setupminiconda3 && conda activate py3qknn"         # The QKnn paper
-alias py3stim="setupminiconda3 && conda activate py3stim"         # Stim, cirq
-alias py3tf="setupminiconda3 && conda activate py3tf"             # tensorflow
+alias py3basic="setupminiconda3 && conda activate py3basic"        # Jupyter, IPython
+alias py3buildallm="setupminiconda3 && conda activate py3buildallm"
+alias py3cirq="setupminiconda3 && conda activate py3cirq"          # cirq, data science basics
+alias py3liver="setupminiconda3 && conda activate py3liver"        # Liverpool + FNAL QEC stuff
+alias py3qec="setupminiconda3 && conda activate py3qec"            # "CoolName" quantum error correction
+alias py3qknn="setupminiconda3 && conda activate py3qknn"          # The QKnn paper
+alias py3qualtran="setupminiconda3 && conda activate py3qualtran"  # Qualtran work env
+alias py3stim="setupminiconda3 && conda activate py3stim"          # Stim, cirq
+alias py3tf="setupminiconda3 && conda activate py3tf"              # tensorflow
 
 #alias py3trch="setupminiconda3 && conda activate py3trch"            # pytorch
 #alias py3astro="setupminiconda3 && conda activate py3astro"          # astropy, some ml stuff
