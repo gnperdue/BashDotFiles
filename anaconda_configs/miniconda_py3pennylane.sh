@@ -42,6 +42,8 @@ cat <<EOT >> $REQNAME
 jupyterlab >= 4.0
 tqdm >= 4.66.1
 coverage
+matplotlib
+scipy
 pennylane
 EOT
 pip install -r $REQNAME
