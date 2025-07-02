@@ -1,0 +1,1 @@
+alias py3basic="setupminiconda3 && conda activate py3basic"          # Jupyter, IPython
