@@ -15,4 +15,4 @@
 [alias]
         show-graph = log --graph --abbrev-commit --pretty=oneline
 [credential]
-        helper = osxkeychain
+        helper = manager
