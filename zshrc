@@ -55,12 +55,12 @@ fi
 
 # path stuff
 export PATH=$PATH:~/PersonalScripts:~/Dropbox/UnixSettings/LocalScripts
-#eval $(/opt/homebrew/bin/brew shellenv)
+eval $(/opt/homebrew/bin/brew shellenv)
 # gem for jekyll, ruby stuff - problems on M1, blow this up and come back to it (2021-02-08)
 #export PATH=$PATH:/Users/perdue/.gem/ruby/2.6.0/bin
 # Haskell stuff - needs rationalization, probably
 #export PATH="$HOME/.cabal/bin:/Users/perdue/.ghcup/bin:$PATH"
-[ -f "/Users/perdue/.ghcup/env" ] && source "/Users/perdue/.ghcup/env" # ghcup-env
+#[ -f "/Users/perdue/.ghcup/env" ] && source "/Users/perdue/.ghcup/env" # ghcup-env
 # VSCode
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
@@ -85,3 +85,7 @@ alias chkpath="echo $PATH | tr \":\" \"\n\" | sort"
 
 # Local stuff
 source $HOME/.zshrc_local
+
+# for julia, via juliaup
+path=('/Users/perdue/.juliaup/bin' $path)
+export PATH
