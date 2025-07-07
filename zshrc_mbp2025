@@ -1,1 +1,2 @@
-alias py3basic="setupminiconda3 && conda activate py3basic"          # Jupyter, IPython
+alias py3basic="setupminiconda3 && conda activate py3basic"     # Jupyter, IPython
+alias py3stim="setupminiconda3 && conda activate py3stim"       # Stim, some scientific Python
