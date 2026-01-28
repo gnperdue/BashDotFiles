@@ -4,3 +4,5 @@ alias py3hf="setupminiconda3 && conda activate py3hf"
 alias py3cirq="setupminiconda3 && conda activate py3cirq"
 alias py3qec="setupminiconda3 && conda activate py3trch"
 
+# set up claude code
+export PATH="$HOME/.local/bin:$PATH"
