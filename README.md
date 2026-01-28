@@ -44,6 +44,7 @@ saved plist file here.)
 * Run `git config --global credential.helper osxkeychain`
 * Check https://help.github.com/articles/caching-your-github-password-in-git/
 * Create a new access token and add it to `~/.gitconfig`
+* See https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens
 
 ## Misc
 
