@@ -1,3 +1,6 @@
+# ~/.zshrc
+autoload -Uz compinit
+compinit -i
 
 alias py3j="setupminiconda3 && conda activate py3j"
 alias py3hf="setupminiconda3 && conda activate py3hf"
