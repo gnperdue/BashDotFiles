@@ -1,3 +1,4 @@
+
 # gcloud
 export PATH=/opt/homebrew/share/google-cloud-sdk/bin:"$PATH"
 
@@ -6,9 +7,14 @@ alias py3datsci="setupminiconda3 && conda activate py3datsci"      # Some data s
 alias py3qualtran="setupminiconda3 && conda activate py3qualtran"  # Qultran, deps, some scientific Python
 alias py3stim="setupminiconda3 && conda activate py3stim"          # Stim, some scientific Python
 
-# set up claude code
+# set up claude code and uv
 export PATH="$HOME/.local/bin:$PATH"
 export CLAUDE_CODE_MAX_OUTPUT_TOKENS=64000
+export CLAUDE_CODE_EFFORT_LEVEL=max
+export CLAUDE_CODE_DISABLE_ADAPTIVE_THINKING=1
+
+# more gcloud
+export CLOUDSDK_PYTHON="$(uv python find 3.12)"
 
 # set up node js
 export NVM_DIR="$HOME/.nvm"
